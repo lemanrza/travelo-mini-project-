@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-LightItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Light.woff2") format("woff2"), url("../assets/fonts/Rubik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Bold.woff2") format("woff2"), url("../assets/fonts/Rubik-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-ExtraBoldItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-BoldItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Black.woff2") format("woff2"), url("../assets/fonts/Rubik-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-ExtraBold.woff2") format("woff2"), url("../assets/fonts/Rubik-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-BlackItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-SemiBoldItalic.woff2") format("woff2"), url("../assets/fontsRubik-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Light.woff2") format("woff2"), url("../assets/fonts/Rubik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Italic.woff2") format("woff2"), url("../assets/fonts/Rubik-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-MediumItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Regular.woff2") format("woff2"), url("../assets/fonts/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-SemiBold.woff2") format("woff2"), url("../assets/fonts/Rubik-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-LightItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Medium.woff2") format("woff2"), url("../assets/fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nothing You Could Do";
+  src: url("../assets/fonts/NothingYouCouldDo.woff2") format("woff2"), url("../assets/fonts/NothingYouCouldDo.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+h1 {
+  font-family: "Nothing You Could Do";
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Rubik";
+}
+header .first {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  width: 50%;
+}
+header .first .list ul {
+  font-size: 16px;
+  font-weight: 400;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .first .list ul li a {
+  color: black;
+}
+header .first .menu {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+header .second {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex: 1;
+  width: 50%;
+  gap: 40px;
+}
+header .second .phone {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+header .second .phone svg {
+  fill: #FF4A52;
+  height: 20px;
+  width: 20px;
+}
+header .second .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+header .second .social a {
+  color: #B6BCC1;
+}
+header .second .box {
+  padding: 40px;
+  background-color: #FF4A52;
+}
+header .second .box i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .list {
+    display: none;
+  }
+  header .menu {
+    display: flex;
+  }
+  header .second .phone {
+    visibility: hidden;
+  }
+  header .second .social {
+    visibility: hidden;
+  }
+  header .second .box {
+    width: 30%;
+  }
+}
+.image-section .image {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+}
+.image-section .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.image-section .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.image-section .text h3 {
+  font-family: "Nothing You Could Do";
+  font-size: 130px;
+  letter-spacing: 8px;
+  font-weight: 400;
+}
+.image-section .text p {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+}
+.image-section .text .btn {
+  margin-top: 40px;
+  color: white;
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 15px;
+}
+.image-section .information {
+  height: 15vh;
+  width: 100%;
+  background-color: #040E27;
+}
+.image-section .information .form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+  margin: 0 90px;
+  font-family: "Rubik";
+}
+.image-section .information .form h3 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+}
+.image-section .information .form input {
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: transparent;
+  padding: 15px;
+}
+.image-section .information .form select {
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: transparent;
+  padding: 15px;
+  color: #757575;
+}
+
+.btn {
+  padding: 20px 50px;
+  background-color: #1EC6B6;
+  border-radius: 7px;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
