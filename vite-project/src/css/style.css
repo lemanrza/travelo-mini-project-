@@ -227,12 +227,13 @@ header .connect .box i {
     padding: 25px;
   }
 }
-.image-section .image {
-  position: relative;
+.image-section {
   width: 100%;
   height: 85vh;
+  overflow: hidden;
+  position: relative;
 }
-.image-section .image img {
+.image-section img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -254,6 +255,7 @@ header .connect .box i {
   font-size: 130px;
   letter-spacing: 8px;
   font-weight: 400;
+  color: #fff;
 }
 .image-section .text p {
   font-family: "Rubik";
@@ -261,11 +263,11 @@ header .connect .box i {
   font-weight: 400;
 }
 .image-section .text .btn {
-  margin-top: 40px;
   color: white;
   font-family: "Rubik";
   font-weight: 500;
   font-size: 15px;
+  margin-top: 2rem;
 }
 .image-section .information {
   height: 15vh;
@@ -299,6 +301,24 @@ header .connect .box i {
   color: #757575;
 }
 
+@media (max-width: 991px) {
+  .image-section .image {
+    height: 50vh;
+  }
+  .image-section .text {
+    gap: 20px;
+  }
+  .image-section .text h3 {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+  .image-section .text p {
+    text-align: center;
+  }
+  .image-section .text .btn {
+    margin-top: 0;
+  }
+}
 .btn {
   padding: 20px 50px;
   background-color: #1EC6B6;
