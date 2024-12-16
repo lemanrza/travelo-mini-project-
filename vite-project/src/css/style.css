@@ -140,7 +140,7 @@ header .toggle-menu {
   margin-bottom: 0.3rem;
 }
 header .toggle-menu i {
-  color: red;
+  color: #FF4A52;
   font-size: 25px;
 }
 header nav {
@@ -192,6 +192,10 @@ header .connect .social {
 }
 header .connect .social a {
   color: #B6BCC1;
+  transition: 0.4s;
+}
+header .connect .social a:hover {
+  color: #FF4A52;
 }
 header .connect .box {
   padding: 40px;
@@ -268,37 +272,186 @@ header .connect .box i {
   font-weight: 500;
   font-size: 15px;
   margin-top: 2rem;
+  transition: 0.4s;
 }
-.image-section .information {
-  height: 15vh;
+.image-section .text .btn:hover {
+  background-color: #FF4A52;
+}
+
+.information {
+  height: 20vh;
   width: 100%;
   background-color: #040E27;
+  padding: 0 14%;
 }
-.image-section .information .form {
+.information .form {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 40px;
-  margin: 0 90px;
+  padding: 50px 40px;
   font-family: "Rubik";
 }
-.image-section .information .form h3 {
+.information .form h3 {
   font-size: 24px;
   color: #fff;
   font-weight: 400;
 }
-.image-section .information .form input {
+.information .form input {
   border: 1px solid white;
   border-radius: 7px;
   background-color: transparent;
   padding: 15px;
 }
-.image-section .information .form select {
+.information .form select {
   border: 1px solid white;
   border-radius: 7px;
   background-color: transparent;
-  padding: 15px;
+  padding: 15px 25px;
   color: #757575;
+}
+.information .form .btn {
+  background-color: #FF4A52;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.information .form .btn:hover {
+  background-color: #1EC6B6;
+}
+
+.destination_photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Rubik";
+  padding: 8%;
+}
+.destination_photos h3 {
+  font-weight: 400;
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.destination_photos p {
+  color: #7A838B;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 30% 5% 30%;
+  line-height: 1.5;
+}
+.destination_photos .photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.destination_photos .photos .item {
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+}
+.destination_photos .photos .item:hover .text span {
+  color: #FF4A52;
+}
+.destination_photos .photos .item:hover .text a {
+  background-color: #FF4A52;
+  color: white;
+}
+.destination_photos .photos .item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  opacity: 0.3;
+  transition: 0.4s;
+}
+.destination_photos .photos .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.destination_photos .photos .item .text {
+  position: absolute;
+  margin-left: 40px;
+  bottom: 25px;
+  font-family: "Rubik";
+}
+.destination_photos .photos .item .text span {
+  font-size: 25px;
+  color: white;
+  margin-right: 7px;
+  transition: 0.4s;
+}
+.destination_photos .photos .item .text a {
+  background-color: #1EC6B6;
+  color: white;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 5px 12px;
+  transition: 0.4s;
+}
+
+.subscribe {
+  background-image: url(https://preview.colorlib.com/theme/travelo/img/banner/newsletter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  padding: 7% 0;
+  position: relative;
+  overflow: hidden;
+}
+.subscribe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #040E27;
+  opacity: 0.7;
+}
+.subscribe .text {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  font-family: "Rubik";
+  z-index: 999;
+  width: 22%;
+}
+.subscribe .text h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+}
+.subscribe .text p {
+  font-size: 16px;
+  color: #B6BCC1;
+}
+.subscribe .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 999;
+}
+.subscribe .form input {
+  padding: 15px 40% 15px 10px;
+  border: none;
+  border-radius: 10px;
+}
+.subscribe .form .btn {
+  background-color: #FF4A52;
+  color: white;
+  font-size: 15px;
+  padding: 7px;
 }
 
 @media (max-width: 991px) {

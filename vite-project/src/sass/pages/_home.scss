@@ -3,11 +3,12 @@
     height: 85vh;
     overflow: hidden;
     position: relative;
-         img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
     .text {
         display: flex;
@@ -40,63 +41,256 @@
             font-weight: 500;
             font-size: 15px;
             margin-top: 2rem;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: $header-color;
+            }
         }
     }
+}
 
-    .information {
-        height: 15vh;
+.information {
+    height: 20vh;
+    width: 100%;
+    background-color: #040E27;
+    padding: 0 14%;
+
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px 40px;
+        font-family: "Rubik";
+
+
+        h3 {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        input {
+            border: 1px solid white;
+            border-radius: 7px;
+            background-color: transparent;
+            padding: 15px;
+
+        }
+
+        select {
+            border: 1px solid white;
+            border-radius: 7px;
+            background-color: transparent;
+            padding: 15px 25px;
+            color: #757575;
+        }
+
+        .btn {
+            background-color: $header-color;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: $btn-color;
+            }
+        }
+    }
+}
+
+.destination_photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Rubik";
+    padding: 8%;
+
+    h3 {
+        font-weight: 400;
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+
+    p {
+        color: #7A838B;
+        font-size: 16px;
+        text-align: center;
+        padding: 0 30% 5% 30%;
+        line-height: 1.5;
+    }
+
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+
+        .item {
+            border-radius: 7px;
+            overflow: hidden;
+            position: relative;
+
+            // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            // width: 300px;
+            // height: 200px;
+            // background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 80%);
+            // background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.3) 80%);
+            // box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+            &:hover {
+
+                // img {
+                //     margin-bottom: 10px;
+                // }
+                .text {
+                    span {
+                        color: $header-color;
+                    }
+
+                    a {
+                        background-color: $header-color;
+                        color: white;
+                    }
+                }
+
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgb(18, 18, 18);
+                opacity: .3;
+                transition: 0.4s;
+
+            }
+
+            img {
+
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .text {
+                position: absolute;
+                margin-left: 40px;
+                bottom: 25px;
+                font-family: "Rubik";
+
+                span {
+                    font-size: 25px;
+                    color: white;
+                    margin-right: 7px;
+                    transition: 0.4s;
+
+                }
+
+                a {
+                    background-color: $btn-color;
+                    color: white;
+                    font-size: 13px;
+                    border-radius: 20px;
+                    padding: 5px 12px;
+                    transition: 0.4s;
+
+                }
+            }
+        }
+    }
+}
+
+.subscribe {
+    background-image: url(https://preview.colorlib.com/theme/travelo/img/banner/newsletter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    padding: 7% 0;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
         width: 100%;
         background-color: #040E27;
+        opacity: .7;
+    }
 
-        .form {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            padding: 40px;
-            margin: 0 90px;
-            font-family: "Rubik";
 
-            h3 {
-                font-size: 24px;
-                color: #fff;
-                font-weight: 400;
-            }
+    .text {
+        display: flex;
+        justify-content: start;
+        // align-items: center;
+        flex-direction: column;
+        font-family: "Rubik";
+        z-index: 999;
+        width: 22%;
 
-            input {
-                border: 1px solid white;
-                border-radius: 7px;
-                background-color: transparent;
-                padding: 15px;
-            }
+        h4 {
+            font-size: 24px;
+            font-weight: 400;
+            color: white;
+        }
 
-            select {
-                border: 1px solid white;
-                border-radius: 7px;
-                background-color: transparent;
-                padding: 15px;
-                color: #757575;
-            }
-
+        p {
+            font-size: 16px;
+            color: $gray-color;
         }
     }
 
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        z-index: 999;
+
+        input {
+            padding: 15px 40% 15px 10px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .btn {
+            background-color: $header-color;
+            color: white;
+            font-size: 15px;
+            padding: 7px;
+        }
+    }
 }
 
 @media (max-width:991px) {
-    .image-section{
-        .image{
+    .image-section {
+        .image {
             height: 50vh;
         }
-        .text{
+
+        .text {
             gap: 20px;
-            h3{
+
+            h3 {
                 font-size: 60px;
-                letter-spacing: 3px;  
+                letter-spacing: 3px;
             }
-            p{
+
+            p {
                 text-align: center;
             }
-            .btn{
+
+            .btn {
                 margin-top: 0;
             }
         }
