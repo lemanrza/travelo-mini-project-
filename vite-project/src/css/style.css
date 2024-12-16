@@ -132,95 +132,99 @@ h1 {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-family: "Rubik";
 }
-header .first {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex: 1;
-  width: 50%;
+header .toggle-menu {
+  display: none;
+  margin-bottom: 0.3rem;
 }
-header .first .list ul {
-  font-size: 16px;
-  font-weight: 400;
+header .toggle-menu i {
+  color: red;
+  font-size: 25px;
+}
+header nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+header nav .logo {
+  padding: 0 2rem;
+}
+header nav .navbar {
   gap: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 3px 0 3px 2rem;
+  border-left: 1px solid #a4a4a4;
 }
-header .first .list ul li a {
+header nav .navbar li {
+  margin: 0 10px;
+}
+header nav .navbar li a {
   color: black;
+  font-size: 16px;
+  font-weight: 400;
 }
-header .first .menu {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  background-color: black;
-  color: white;
-  padding: 10px;
-}
-header .second {
+header .connect {
   display: flex;
   justify-content: end;
   align-items: center;
-  flex: 1;
-  width: 50%;
   gap: 40px;
 }
-header .second .phone {
+header .connect .phone {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  border-right: 1px solid #a4a4a4;
+  padding: 3px 1rem;
 }
-header .second .phone svg {
+header .connect .phone svg {
   fill: #FF4A52;
   height: 20px;
   width: 20px;
 }
-header .second .social {
+header .connect .social {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 20px;
 }
-header .second .social a {
+header .connect .social a {
   color: #B6BCC1;
 }
-header .second .box {
+header .connect .box {
   padding: 40px;
   background-color: #FF4A52;
-}
-header .second .box i {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+header .connect .box i {
   color: white;
 }
 
 @media (max-width: 991px) {
   header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-left: 1rem;
   }
-  header .list {
+  header .toggle-menu {
+    display: block;
+  }
+  header nav .logo {
+    padding: 0;
+  }
+  header nav .navbar {
     display: none;
   }
-  header .menu {
-    display: flex;
+  header .connect .phone {
+    display: none;
   }
-  header .second .phone {
-    visibility: hidden;
+  header .connect .social {
+    display: none;
   }
-  header .second .social {
-    visibility: hidden;
-  }
-  header .second .box {
-    width: 30%;
+  header .connect .box {
+    padding: 25px;
   }
 }
 .image-section .image {
