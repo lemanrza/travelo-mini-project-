@@ -636,4 +636,12 @@
           }
         }
     }
+    .popular_places{
+        .heading {
+            padding: 10px 0 40px 0;
+        }
+        .popular_places_photos{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }

@@ -768,6 +768,12 @@ header .connect .box i {
   .subscribe .form .btn {
     width: 100%;
   }
+  .popular_places .heading {
+    padding: 10px 0 40px 0;
+  }
+  .popular_places .popular_places_photos {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .btn {
   padding: 20px 50px;
