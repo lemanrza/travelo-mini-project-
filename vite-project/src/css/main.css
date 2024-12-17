@@ -788,9 +788,92 @@ header .connect .box i {
     flex-direction: column;
   }
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Rubik";
+  background-color: #040E27;
+  color: white;
+}
+footer .info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10%;
+  color: #AAB1B7;
+  padding-bottom: 5%;
+}
+footer .info .logo_and_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 7%;
+}
+footer .info .logo_and_info .logo_image {
+  padding-bottom: 7%;
+}
+footer .info .logo_and_info p {
+  padding-right: 35%;
+  line-height: 1.5;
+}
+footer .info .logo_and_info .social {
+  padding-top: 10%;
+  display: flex;
+  padding-right: 40%;
+  justify-content: space-between;
+}
+footer .info .addition {
+  display: flex;
+  gap: 40px;
+}
+footer .info .addition h3 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10%;
+  color: white;
+}
+footer .info .addition .company ul {
+  line-height: 2;
+}
+footer .info .addition .company ul li a {
+  color: #AAB1B7;
+}
+footer .info .addition .popular-destination .all-list {
+  display: flex;
+  gap: 25px;
+  line-height: 2;
+}
+footer .info .addition .popular-destination .all-list a {
+  color: #AAB1B7;
+}
+footer .info .addition .instagram .instagram-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+footer .ending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #7A838B;
+  border-top: 1px solid #7A838B;
+  padding: 3% 20% 20px 20%;
+}
+footer .ending p:first-child {
+  border-right: 2px solid #7A838B;
+  padding: 0 15px;
+}
+footer .ending p:last-child span {
+  color: #FF4A52;
+}
+
 .btn {
   padding: 20px 50px;
   background-color: #1EC6B6;
   border-radius: 7px;
   border: none;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
