@@ -577,7 +577,6 @@
             }
         }
     }
-
     .information {
         display: flex;
         height: 50vh;
@@ -599,7 +598,6 @@
             }
         }
     }
-
     .popular_destination {
         padding: 15% 10px;
         h3 {
@@ -642,6 +640,15 @@
         }
         .popular_places_photos{
             grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .tour-benefits{
+        flex-direction: column;
+        gap: 30px; 
+        .feature-card{
+            h3 {
+                padding: 15px 0 8px 0;
+            }
         }
     }
 }
