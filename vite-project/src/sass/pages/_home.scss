@@ -388,9 +388,50 @@
             }
         }
     }
+.btn {
+    margin: 7% auto;
+    background-color: $header-color;
+    transition: 0.2s;
+   a {
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+   }
+   &:hover {
+    background-color: $btn-color;
+
+   }
+}
+}
+
+.video-section {
 
 }
 
+.tour-benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Rubik";
+  padding: 0 12%;
+    .feature-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            padding: 25px;
+            font-weight: 400;
+            font-size: 22px;
+        }
+        p {
+            line-height: 1.5;
+            font-size: 17px;
+            text-align: center;
+            color: #757575;
+        }
+    }
+}
 @media (max-width:991px) {
     .image-section {
         .image {

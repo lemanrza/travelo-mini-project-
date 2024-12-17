@@ -565,6 +565,44 @@ header .connect .box i {
   gap: 10px;
   color: #82838B;
 }
+.popular_places .btn {
+  margin: 7% auto;
+  background-color: #FF4A52;
+  transition: 0.2s;
+}
+.popular_places .btn a {
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+}
+.popular_places .btn:hover {
+  background-color: #1EC6B6;
+}
+
+.tour-benefits {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Rubik";
+  padding: 0 12%;
+}
+.tour-benefits .feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tour-benefits .feature-card h3 {
+  padding: 25px;
+  font-weight: 400;
+  font-size: 22px;
+}
+.tour-benefits .feature-card p {
+  line-height: 1.5;
+  font-size: 17px;
+  text-align: center;
+  color: #757575;
+}
 
 @media (max-width: 991px) {
   .image-section .image {
