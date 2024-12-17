@@ -306,12 +306,14 @@
             overflow: hidden;
             position: relative;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
             &:hover {
                 .popular_places_price {
                     a {
                         background-color: $header-color;
                     }
                 }
+
                 .photo_info {
                     h3 {
                         color: $header-color;
@@ -351,16 +353,19 @@
                     display: flex;
                     flex-direction: column;
                     align-items: start;
+
                     h3 {
                         transition: 0.4s;
                         font-size: 22px;
                         font-weight: 400;
                     }
+
                     p {
                         font-size: 14px;
                         color: #82838B;
                     }
                 }
+
                 .photo_rating {
                     display: flex;
                     justify-content: space-between;
@@ -369,17 +374,20 @@
 
                     .number-of-star {
                         display: flex;
-                  i {
-                    font-size: 14px;
-                    color: #FDAE5C;
-                  }
-                  span {
-                    margin-left: 5px;
-                    color: #82838B;
-                  }
+
+                        i {
+                            font-size: 14px;
+                            color: #FDAE5C;
+                        }
+
+                        span {
+                            margin-left: 5px;
+                            color: #82838B;
+                        }
                     }
+
                     .number-of-day {
-                        
+
                         display: flex;
                         gap: 10px;
                         color: #82838B;
@@ -388,42 +396,46 @@
             }
         }
     }
-.btn {
-    margin: 7% auto;
-    background-color: $header-color;
-    transition: 0.2s;
-   a {
-    font-size: 17px;
-    color: white;
-    font-weight: 600;
-   }
-   &:hover {
-    background-color: $btn-color;
 
-   }
-}
+    .btn {
+        margin: 7% auto;
+        background-color: $header-color;
+        transition: 0.2s;
+
+        a {
+            font-size: 17px;
+            color: white;
+            font-weight: 600;
+        }
+
+        &:hover {
+            background-color: $btn-color;
+
+        }
+    }
 }
 
-.video-section {
-
-}
+.video-section {}
 
 .tour-benefits {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: "Rubik";
-  padding: 0 12% 5% 12%;
+    padding: 0 12% 5% 12%;
+
     .feature-card {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         h3 {
             padding: 25px;
             font-weight: 400;
             font-size: 22px;
         }
+
         p {
             line-height: 1.5;
             font-size: 17px;
@@ -440,9 +452,11 @@
     align-items: center;
     flex-direction: column;
     background-color: #F7FAFD;
+
     .author_image {
         position: relative;
     }
+
     .quote {
         position: absolute;
         background-color: $btn-color;
@@ -452,6 +466,7 @@
         margin-bottom: 5%;
         padding: 17px;
     }
+
     .text {
         padding: 20px;
         display: flex;
@@ -459,34 +474,91 @@
         align-items: center;
         font-family: "Rubik";
         gap: 15px;
+
         p {
             text-align: center;
             padding: 0 17%;
             line-height: 1.5;
             font-size: 18px;
         }
+
         span {
             font-size: 16px;
             color: #757575;
         }
     }
+
     .circles {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 12px;
+
         .item {
             padding: 5px;
             border-radius: 50%;
             background-color: #AAB1B7;
+
             &:first-child {
                 background-color: $header-color;
             }
         }
     }
-    
+
 
 }
+
+.recent-trips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik";
+    flex-direction: column;
+    padding: 40px;
+
+    h3 {
+        padding: 5%;
+        font-size: 35px;
+        font-weight: 400;
+    }
+
+    .recent-trips_photos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        padding: 0 10%;
+
+        .item {
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            border-radius: 10px;
+            overflow: hidden;
+
+            &:hover {
+                p {
+                    color: $header-color;
+                }
+            }
+
+            span {
+                padding: 20px 0;
+                font-size: 14px;
+                color: #757575;
+            }
+
+            p {
+                font-size: 22px;
+                padding: 0 15% 0 0;
+                text-transform: capitalize;
+                transition: 0.3s;
+            }
+        }
+    }
+
+}
+
 @media (max-width:991px) {
     .image-section {
         .image {

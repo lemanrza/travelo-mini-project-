@@ -657,6 +657,48 @@ header .connect .box i {
   background-color: #FF4A52;
 }
 
+.recent-trips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik";
+  flex-direction: column;
+  padding: 40px;
+}
+.recent-trips h3 {
+  padding: 5%;
+  font-size: 35px;
+  font-weight: 400;
+}
+.recent-trips .recent-trips_photos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 0 10%;
+}
+.recent-trips .recent-trips_photos .item {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.recent-trips .recent-trips_photos .item:hover p {
+  color: #FF4A52;
+}
+.recent-trips .recent-trips_photos .item span {
+  padding: 20px 0;
+  font-size: 14px;
+  color: #757575;
+}
+.recent-trips .recent-trips_photos .item p {
+  font-size: 22px;
+  padding: 0 15% 0 0;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
 @media (max-width: 991px) {
   .image-section .image {
     height: 50vh;
