@@ -320,7 +320,7 @@ header .connect .box i {
   background-color: #1EC6B6;
 }
 
-.destination_photos {
+.popular_destination {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -328,36 +328,36 @@ header .connect .box i {
   font-family: "Rubik";
   padding: 8%;
 }
-.destination_photos h3 {
+.popular_destination h3 {
   font-weight: 400;
   font-size: 35px;
   padding-bottom: 20px;
 }
-.destination_photos p {
+.popular_destination p {
   color: #7A838B;
   font-size: 16px;
   text-align: center;
   padding: 0 30% 5% 30%;
   line-height: 1.5;
 }
-.destination_photos .photos {
+.popular_destination .popular_destination_photos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
-.destination_photos .photos .item {
+.popular_destination .popular_destination_photos .item {
   border-radius: 7px;
   overflow: hidden;
   position: relative;
 }
-.destination_photos .photos .item:hover .text span {
+.popular_destination .popular_destination_photos .item:hover .text span {
   color: #FF4A52;
 }
-.destination_photos .photos .item:hover .text a {
+.popular_destination .popular_destination_photos .item:hover .text a {
   background-color: #FF4A52;
   color: white;
 }
-.destination_photos .photos .item::before {
+.popular_destination .popular_destination_photos .item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -368,25 +368,25 @@ header .connect .box i {
   opacity: 0.3;
   transition: 0.4s;
 }
-.destination_photos .photos .item img {
+.popular_destination .popular_destination_photos .item img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.destination_photos .photos .item .text {
+.popular_destination .popular_destination_photos .item .text {
   position: absolute;
   margin-left: 40px;
   bottom: 25px;
   font-family: "Rubik";
 }
-.destination_photos .photos .item .text span {
+.popular_destination .popular_destination_photos .item .text span {
   font-size: 25px;
   color: white;
   margin-right: 7px;
   transition: 0.4s;
 }
-.destination_photos .photos .item .text a {
+.popular_destination .popular_destination_photos .item .text a {
   background-color: #1EC6B6;
   color: white;
   font-size: 13px;
@@ -407,6 +407,7 @@ header .connect .box i {
   padding: 7% 0;
   position: relative;
   overflow: hidden;
+  height: 15vh;
 }
 .subscribe::before {
   content: "";
@@ -437,9 +438,9 @@ header .connect .box i {
 }
 .subscribe .form {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   z-index: 999;
 }
 .subscribe .form input {
@@ -447,11 +448,122 @@ header .connect .box i {
   border: none;
   border-radius: 10px;
 }
+.subscribe .form input::-moz-placeholder {
+  color: #B6BCC1;
+  font-size: 15px;
+  font-weight: 300;
+}
+.subscribe .form input::placeholder {
+  color: #B6BCC1;
+  font-size: 15px;
+  font-weight: 300;
+}
 .subscribe .form .btn {
   background-color: #FF4A52;
   color: white;
-  font-size: 15px;
-  padding: 7px;
+  font-size: 20px;
+  padding: 13px;
+  width: 50%;
+}
+
+.popular_places {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Rubik";
+  padding: 8%;
+}
+.popular_places h3 {
+  font-weight: 400;
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.popular_places .heading {
+  color: #7A838B;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 30% 5% 30%;
+  line-height: 1.5;
+}
+.popular_places .popular_places_photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.popular_places .popular_places_photos .popular_places_item {
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.popular_places .popular_places_photos .popular_places_item:hover .popular_places_price a {
+  background-color: #FF4A52;
+}
+.popular_places .popular_places_photos .popular_places_item:hover .photo_info h3 {
+  color: #FF4A52;
+}
+.popular_places .popular_places_photos .popular_places_item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_price {
+  position: absolute;
+  margin-left: 25px;
+  top: 25px;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_price a {
+  transition: 0.4s;
+  background-color: #1EC6B6;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+  padding: 7px 15px;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 18px;
+  gap: 20px;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_info h3 {
+  transition: 0.4s;
+  font-size: 22px;
+  font-weight: 400;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_info p {
+  font-size: 14px;
+  color: #82838B;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  font-size: 14px;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star {
+  display: flex;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star i {
+  font-size: 14px;
+  color: #FDAE5C;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star span {
+  margin-left: 5px;
+  color: #82838B;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-day {
+  display: flex;
+  gap: 10px;
+  color: #82838B;
 }
 
 @media (max-width: 991px) {
