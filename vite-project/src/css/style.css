@@ -716,6 +716,24 @@ header .connect .box i {
   .image-section .text .btn {
     margin-top: 0;
   }
+  .information {
+    display: flex;
+    height: 50vh;
+  }
+  .information .form {
+    align-items: start;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .information .form input {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .information .form select {
+    width: 100%;
+  }
 }
 .btn {
   padding: 20px 50px;
