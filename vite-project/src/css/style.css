@@ -734,6 +734,20 @@ header .connect .box i {
   .information .form select {
     width: 100%;
   }
+  .popular_destination {
+    padding: 15% 10px;
+  }
+  .popular_destination h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .popular_destination p {
+    padding: 15px 5px;
+    line-height: 1.5;
+  }
+  .popular_destination .popular_destination_photos {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .btn {
   padding: 20px 50px;

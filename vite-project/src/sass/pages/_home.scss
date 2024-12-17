@@ -606,6 +606,17 @@
     }
 
     .popular_destination {
-        
+        padding: 15% 10px;
+        h3 {
+            font-size: 30px;
+            text-align: center;
+        }
+        p {
+            padding: 15px 5px;
+            line-height: 1.5;
+        }
+        .popular_destination_photos {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }
