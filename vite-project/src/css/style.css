@@ -584,7 +584,7 @@ header .connect .box i {
   justify-content: space-around;
   align-items: center;
   font-family: "Rubik";
-  padding: 0 12%;
+  padding: 0 12% 5% 12%;
 }
 .tour-benefits .feature-card {
   display: flex;
@@ -602,6 +602,59 @@ header .connect .box i {
   font-size: 17px;
   text-align: center;
   color: #757575;
+}
+
+.comment-section {
+  padding: 10% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F7FAFD;
+}
+.comment-section .author_image {
+  position: relative;
+}
+.comment-section .quote {
+  position: absolute;
+  background-color: #1EC6B6;
+  color: white;
+  border-radius: 50%;
+  margin-left: 5rem;
+  margin-bottom: 5%;
+  padding: 17px;
+}
+.comment-section .text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Rubik";
+  gap: 15px;
+}
+.comment-section .text p {
+  text-align: center;
+  padding: 0 17%;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.comment-section .text span {
+  font-size: 16px;
+  color: #757575;
+}
+.comment-section .circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.comment-section .circles .item {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #AAB1B7;
+}
+.comment-section .circles .item:first-child {
+  background-color: #FF4A52;
 }
 
 @media (max-width: 991px) {
