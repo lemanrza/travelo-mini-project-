@@ -221,11 +221,9 @@
         opacity: .7;
     }
 
-
     .text {
         display: flex;
         justify-content: start;
-        // align-items: center;
         flex-direction: column;
         font-family: "Rubik";
         z-index: 999;
@@ -247,8 +245,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        // border: 2px solid red;
         gap: 40px;
         z-index: 999;
 
@@ -269,7 +265,6 @@
             color: white;
             font-size: 20px;
             padding: 13px;
-            width: 50%;
         }
     }
 }
@@ -617,6 +612,28 @@
         }
         .popular_destination_photos {
             grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    .subscribe {
+        justify-content: center;
+        height: 45vh;
+        flex-direction: column;
+        padding: 0 10px;
+        .text {
+            width: 100%;
+            // padding: 0;
+        }
+        .form {
+            width: 100%;
+            flex-direction: column;
+            gap: 10px;
+          input {
+            padding: 10px 0;
+            width: 100%;
+          }
+          .btn {
+            width: 100%;
+          }
         }
     }
 }

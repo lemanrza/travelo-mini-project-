@@ -463,7 +463,6 @@ header .connect .box i {
   color: white;
   font-size: 20px;
   padding: 13px;
-  width: 50%;
 }
 
 .popular_places {
@@ -747,6 +746,27 @@ header .connect .box i {
   }
   .popular_destination .popular_destination_photos {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .subscribe {
+    justify-content: center;
+    height: 45vh;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .subscribe .text {
+    width: 100%;
+  }
+  .subscribe .form {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .subscribe .form input {
+    padding: 10px 0;
+    width: 100%;
+  }
+  .subscribe .form .btn {
+    width: 100%;
   }
 }
 .btn {
