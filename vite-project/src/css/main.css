@@ -166,6 +166,10 @@ header nav .navbar li a {
   color: black;
   font-size: 16px;
   font-weight: 400;
+  transition: 0.2s;
+}
+header nav .navbar li a:hover {
+  color: #1EC6B6;
 }
 header .connect {
   display: flex;
@@ -198,7 +202,7 @@ header .connect .social a:hover {
   color: #FF4A52;
 }
 header .connect .box {
-  padding: 40px;
+  padding: 45px;
   background-color: #FF4A52;
   display: flex;
   align-items: center;
@@ -788,10 +792,153 @@ header .connect .box i {
     flex-direction: column;
   }
 }
+.image-section-about {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+.image-section-about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  opacity: 0.2;
+}
+.image-section-about img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.image-section-about .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.image-section-about .text h3 {
+  font-family: "Nothing You Could Do";
+  font-size: 70px;
+  letter-spacing: 8px;
+  font-weight: 400;
+  color: #fff;
+}
+.image-section-about .text p {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.story-section {
+  font-family: "Rubik";
+}
+.story-section h3 {
+  padding: 10% 13% 3%;
+  font-size: 38px;
+  font-weight: 400;
+}
+.story-section .story-section_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 30% 5% 17%;
+  color: #7A838B;
+}
+.story-section .story-section_text p {
+  line-height: 2;
+  font-size: 16px;
+}
+.story-section .story-section_photos {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 16%;
+}
+.story-section .story-section_tour {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3% 15%;
+}
+.story-section .story-section_tour .tour_number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.story-section .story-section_tour .tour_number span {
+  font-size: 60px;
+  color: #FF4A52;
+}
+.story-section .story-section_tour .tour_number p {
+  color: #7A838B;
+  margin-top: 20px;
+}
+
+.video-section {
+  margin: 5% 0;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+.video-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  opacity: 0.2;
+}
+.video-section img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video-section .video-section_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.video-section .video-section_text h3 {
+  font-family: "Nothing You Could Do";
+  font-size: 80px;
+  letter-spacing: 8px;
+  font-weight: 400;
+  color: #fff;
+}
+.video-section .video-section_text a .btn-video {
+  border: none;
+  width: 90px;
+  height: 90px;
+  padding: 10%;
+  background-color: #1EC6B6;
+  border-radius: 50%;
+}
+.video-section .video-section_text a .btn-video i {
+  font-size: 20px;
+  color: white;
+}
+
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-family: "Rubik";
   background-color: #040E27;
   color: white;

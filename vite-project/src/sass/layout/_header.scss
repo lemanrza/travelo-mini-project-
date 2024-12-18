@@ -37,6 +37,10 @@ header {
                     color: black;
                     font-size: 16px;
                     font-weight: 400;
+                    transition: 0.2s;
+                    &:hover {
+                        color: $btn-color;
+                    }
                 }
             }
         }
@@ -80,7 +84,7 @@ header {
         }
 
         .box {
-            padding: 40px;
+            padding: 45px;
             background-color: $header-color;
             display: flex;
             align-items: center;
