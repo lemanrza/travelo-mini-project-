@@ -5,6 +5,14 @@
   list-style: none;
   text-decoration: none;
 }
+*::-moz-selection {
+  background-color: #444444;
+  color: white;
+}
+*::selection {
+  background-color: #444444;
+  color: white;
+}
 
 @font-face {
   font-family: "Rubik";
@@ -134,6 +142,10 @@ header {
   align-items: center;
   justify-content: space-between;
   font-family: "Rubik";
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: white;
 }
 header .toggle-menu {
   display: none;
@@ -214,6 +226,7 @@ header .connect .box i {
 
 @media (max-width: 991px) {
   header {
+    overflow: hidden;
     padding-left: 1rem;
   }
   header .toggle-menu {
@@ -237,7 +250,7 @@ header .connect .box i {
 }
 .image-section {
   width: 100%;
-  height: 85vh;
+  height: 95vh;
   overflow: hidden;
   position: relative;
 }
@@ -310,7 +323,7 @@ header .connect .box i {
   border: 1px solid white;
   border-radius: 7px;
   background-color: transparent;
-  padding: 15px 25px;
+  padding: 15px 10px;
   color: #757575;
 }
 .information .form .btn {
@@ -489,85 +502,6 @@ header .connect .box i {
   padding: 0 30% 5% 30%;
   line-height: 1.5;
 }
-.popular_places .popular_places_photos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
-.popular_places .popular_places_photos .popular_places_item {
-  border-radius: 7px;
-  overflow: hidden;
-  position: relative;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.popular_places .popular_places_photos .popular_places_item:hover .popular_places_price a {
-  background-color: #FF4A52;
-}
-.popular_places .popular_places_photos .popular_places_item:hover .photo_info h3 {
-  color: #FF4A52;
-}
-.popular_places .popular_places_photos .popular_places_item img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.popular_places .popular_places_photos .popular_places_item .popular_places_price {
-  position: absolute;
-  margin-left: 25px;
-  top: 25px;
-}
-.popular_places .popular_places_photos .popular_places_item .popular_places_price a {
-  transition: 0.4s;
-  background-color: #1EC6B6;
-  color: white;
-  font-size: 17px;
-  border-radius: 20px;
-  padding: 7px 15px;
-}
-.popular_places .popular_places_photos .popular_places_item .popular_places_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px 18px;
-  gap: 20px;
-}
-.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_info {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_info h3 {
-  transition: 0.4s;
-  font-size: 22px;
-  font-weight: 400;
-}
-.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_info p {
-  font-size: 14px;
-  color: #82838B;
-}
-.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  font-size: 14px;
-}
-.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star {
-  display: flex;
-}
-.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star i {
-  font-size: 14px;
-  color: #FDAE5C;
-}
-.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star span {
-  margin-left: 5px;
-  color: #82838B;
-}
-.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-day {
-  display: flex;
-  gap: 10px;
-  color: #82838B;
-}
 .popular_places .btn {
   margin: 7% auto;
   background-color: #FF4A52;
@@ -674,9 +608,8 @@ header .connect .box i {
   font-weight: 400;
 }
 .recent-trips .recent-trips_photos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 0 10%;
 }
@@ -721,13 +654,15 @@ header .connect .box i {
   }
   .information {
     display: flex;
-    height: 50vh;
+    height: 70vh;
   }
   .information .form {
     align-items: start;
     padding: 30px 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    gap: 20px;
   }
   .information .form input {
     flex-direction: column;
@@ -785,11 +720,15 @@ header .connect .box i {
   .tour-benefits .feature-card h3 {
     padding: 15px 0 8px 0;
   }
+  .recent-trips {
+    padding: 0;
+  }
   .recent-trips h3 {
     padding: 10% 0 30px 0;
   }
   .recent-trips .recent-trips_photos {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem 4%;
   }
 }
 .image-section-about {
@@ -882,6 +821,37 @@ header .connect .box i {
   margin-top: 20px;
 }
 
+@media (max-width: 991px) {
+  .image-section-about .image {
+    height: 50vh;
+  }
+  .image-section-about .text {
+    padding: 0 20px;
+    gap: 20px;
+  }
+  .image-section-about .text h3 {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  .image-section-about .text p {
+    text-align: center;
+  }
+  .story-section h3 {
+    padding: 40px 14px 20px;
+  }
+  .story-section .story-section_text {
+    padding: 10px;
+  }
+  .story-section .story-section_photos {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10px;
+  }
+  .story-section .story-section_tour {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .video-section {
   margin: 5% 0;
   width: 100%;
@@ -934,6 +904,99 @@ header .connect .box i {
 .video-section .video-section_text a .btn-video i {
   font-size: 20px;
   color: white;
+}
+
+@media (max-width: 991px) {
+  .video-section {
+    height: 60vh;
+  }
+  .video-section .video-section_text {
+    width: 100%;
+  }
+  .video-section .video-section_text h3 {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 3px;
+  }
+}
+.popular_places_photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.popular_places_photos .popular_places_item {
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.popular_places_photos .popular_places_item:hover .popular_places_price a {
+  background-color: #FF4A52;
+}
+.popular_places_photos .popular_places_item:hover .photo_info h3 {
+  color: #FF4A52;
+}
+.popular_places_photos .popular_places_item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular_places_photos .popular_places_item .popular_places_price {
+  position: absolute;
+  margin-left: 25px;
+  top: 25px;
+}
+.popular_places_photos .popular_places_item .popular_places_price a {
+  transition: 0.4s;
+  background-color: #1EC6B6;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+  padding: 7px 15px;
+}
+.popular_places_photos .popular_places_item .popular_places_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 18px;
+  gap: 20px;
+}
+.popular_places_photos .popular_places_item .popular_places_text .photo_info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.popular_places_photos .popular_places_item .popular_places_text .photo_info h3 {
+  transition: 0.4s;
+  font-size: 22px;
+  font-weight: 400;
+}
+.popular_places_photos .popular_places_item .popular_places_text .photo_info p {
+  font-size: 14px;
+  color: #82838B;
+}
+.popular_places_photos .popular_places_item .popular_places_text .photo_rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  font-size: 14px;
+}
+.popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star {
+  display: flex;
+}
+.popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star i {
+  font-size: 14px;
+  color: #FDAE5C;
+}
+.popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star span {
+  margin-left: 5px;
+  color: #82838B;
+}
+.popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-day {
+  display: flex;
+  gap: 10px;
+  color: #82838B;
 }
 
 footer {
@@ -1018,6 +1081,24 @@ footer .ending p:last-child span {
   color: #FF4A52;
 }
 
+@media (max-width: 991px) {
+  footer {
+    padding-bottom: 20px;
+  }
+  footer .info {
+    flex-direction: column;
+    padding: 0 4%;
+  }
+  footer .addition {
+    padding-top: 20px;
+    flex-direction: column;
+    width: 100%;
+  }
+  footer .ending {
+    flex-direction: column;
+    padding: 3% 0;
+  }
+}
 .btn {
   padding: 20px 50px;
   background-color: #1EC6B6;
