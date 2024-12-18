@@ -40,49 +40,53 @@ footer {
 
         .addition {
             display: flex;
-            // justify-content: space-around;
-            // align-items: center;
-            gap:40px;
-            // padding-right: 10px;
+            gap: 40px;
+
             h3 {
                 font-size: 20px;
                 font-weight: 400;
-                // padding: 7% 0 10% 0;
                 padding-bottom: 10%;
                 color: white;
             }
-            .company { ul{
-                line-height: 2;
-                li {
-            a {
-                color: #AAB1B7;
+
+            .company {
+                ul {
+                    line-height: 2;
+
+                    li {
+                        a {
+                            color: #AAB1B7;
+                        }
+                    }
+                }
+
             }
+
+            .popular-destination {
+                .all-list {
+                    display: flex;
+                    gap: 25px;
+                    line-height: 2;
+
+                    a {
+                        color: #AAB1B7;
+                    }
                 }
             }
-                
-            }
-.popular-destination {
-.all-list {
-    display: flex;
-    gap: 25px;
-    line-height: 2;
-    a {
-        color: #AAB1B7;
-    }
-}
-}
+
             .instagram {
-                .instagram-photos{
+                .instagram-photos {
                     display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
-                border-radius: 10px;
-                overflow: hidden;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 20px;
+                    border-radius: 10px;
+                    overflow: hidden;
                 }
             }
         }
 
     }
+
     .ending {
         display: flex;
         justify-content: center;
@@ -91,17 +95,40 @@ footer {
         color: #7A838B;
         border-top: 1px solid #7A838B;
         padding: 3% 20% 20px 20%;
-       p {
-        &:first-child{
-            border-right: 2px solid #7A838B;
-            padding: 0 15px;
-        }
-        &:last-child{
-            span {
-                color: $header-color;
+
+        p {
+            &:first-child {
+                border-right: 2px solid #7A838B;
+                padding: 0 15px;
+            }
+
+            &:last-child {
+                span {
+                    color: $header-color;
+                    
+                }
             }
         }
-       }
+    }
+}
+
+@media (max-width:991px) {  
+    footer {
+         padding-bottom: 20px;
+   
+    .info {
+        flex-direction: column;
+        padding: 0 4%;
     }
 
+    .addition {
+        padding-top: 20px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .ending {
+     flex-direction: column;
+    padding: 3% 0;
+    }
+}
 }

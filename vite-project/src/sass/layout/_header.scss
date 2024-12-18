@@ -3,8 +3,11 @@ header {
     align-items: center;
     justify-content: space-between;
     font-family: "Rubik";
-
-    .toggle-menu {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: white;
+     .toggle-menu {
         display: none;
         margin-bottom: .3rem;
         i{
@@ -99,8 +102,9 @@ header {
 
 @media (max-width:991px) {
     header {
+        overflow: hidden;
         padding-left: 1rem;
-        .toggle-menu{
+         .toggle-menu{
             display: block;
         }
          nav {
