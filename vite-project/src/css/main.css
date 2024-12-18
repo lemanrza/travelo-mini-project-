@@ -1,0 +1,1026 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-LightItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Light.woff2") format("woff2"), url("../assets/fonts/Rubik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Bold.woff2") format("woff2"), url("../assets/fonts/Rubik-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-ExtraBoldItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-BoldItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Black.woff2") format("woff2"), url("../assets/fonts/Rubik-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-ExtraBold.woff2") format("woff2"), url("../assets/fonts/Rubik-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-BlackItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-SemiBoldItalic.woff2") format("woff2"), url("../assets/fontsRubik-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Light.woff2") format("woff2"), url("../assets/fonts/Rubik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Italic.woff2") format("woff2"), url("../assets/fonts/Rubik-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-MediumItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Regular.woff2") format("woff2"), url("../assets/fonts/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-SemiBold.woff2") format("woff2"), url("../assets/fonts/Rubik-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-LightItalic.woff2") format("woff2"), url("../assets/fonts/Rubik-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Medium.woff2") format("woff2"), url("../assets/fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nothing You Could Do";
+  src: url("../assets/fonts/NothingYouCouldDo.woff2") format("woff2"), url("../assets/fonts/NothingYouCouldDo.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+h1 {
+  font-family: "Nothing You Could Do";
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Rubik";
+}
+header .toggle-menu {
+  display: none;
+  margin-bottom: 0.3rem;
+}
+header .toggle-menu i {
+  color: #FF4A52;
+  font-size: 25px;
+}
+header nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+header nav .logo {
+  padding: 0 2rem;
+}
+header nav .navbar {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 0 3px 2rem;
+  border-left: 1px solid #a4a4a4;
+}
+header nav .navbar li {
+  margin: 0 10px;
+}
+header nav .navbar li a {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  transition: 0.2s;
+}
+header nav .navbar li a:hover {
+  color: #1EC6B6;
+}
+header .connect {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 40px;
+}
+header .connect .phone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-right: 1px solid #a4a4a4;
+  padding: 3px 1rem;
+}
+header .connect .phone svg {
+  fill: #FF4A52;
+  height: 20px;
+  width: 20px;
+}
+header .connect .social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .connect .social a {
+  color: #B6BCC1;
+  transition: 0.4s;
+}
+header .connect .social a:hover {
+  color: #FF4A52;
+}
+header .connect .box {
+  padding: 45px;
+  background-color: #FF4A52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .connect .box i {
+  color: white;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding-left: 1rem;
+  }
+  header .toggle-menu {
+    display: block;
+  }
+  header nav .logo {
+    padding: 0;
+  }
+  header nav .navbar {
+    display: none;
+  }
+  header .connect .phone {
+    display: none;
+  }
+  header .connect .social {
+    display: none;
+  }
+  header .connect .box {
+    padding: 25px;
+  }
+}
+.image-section {
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+  position: relative;
+}
+.image-section img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.image-section .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.image-section .text h3 {
+  font-family: "Nothing You Could Do";
+  font-size: 130px;
+  letter-spacing: 8px;
+  font-weight: 400;
+  color: #fff;
+}
+.image-section .text p {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+}
+.image-section .text .btn {
+  color: white;
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 2rem;
+  transition: 0.4s;
+}
+.image-section .text .btn:hover {
+  background-color: #FF4A52;
+}
+
+.information {
+  height: 20vh;
+  width: 100%;
+  background-color: #040E27;
+  padding: 0 14%;
+}
+.information .form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 40px;
+  font-family: "Rubik";
+}
+.information .form h3 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+}
+.information .form input {
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: transparent;
+  padding: 15px;
+}
+.information .form select {
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: transparent;
+  padding: 15px 25px;
+  color: #757575;
+}
+.information .form .btn {
+  background-color: #FF4A52;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.information .form .btn:hover {
+  background-color: #1EC6B6;
+}
+
+.popular_destination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Rubik";
+  padding: 8%;
+}
+.popular_destination h3 {
+  font-weight: 400;
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.popular_destination p {
+  color: #7A838B;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 30% 5% 30%;
+  line-height: 1.5;
+}
+.popular_destination .popular_destination_photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.popular_destination .popular_destination_photos .item {
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+}
+.popular_destination .popular_destination_photos .item:hover .text span {
+  color: #FF4A52;
+}
+.popular_destination .popular_destination_photos .item:hover .text a {
+  background-color: #FF4A52;
+  color: white;
+}
+.popular_destination .popular_destination_photos .item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  opacity: 0.3;
+  transition: 0.4s;
+}
+.popular_destination .popular_destination_photos .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular_destination .popular_destination_photos .item .text {
+  position: absolute;
+  margin-left: 40px;
+  bottom: 25px;
+  font-family: "Rubik";
+}
+.popular_destination .popular_destination_photos .item .text span {
+  font-size: 25px;
+  color: white;
+  margin-right: 7px;
+  transition: 0.4s;
+}
+.popular_destination .popular_destination_photos .item .text a {
+  background-color: #1EC6B6;
+  color: white;
+  font-size: 13px;
+  border-radius: 20px;
+  padding: 5px 12px;
+  transition: 0.4s;
+}
+
+.subscribe {
+  background-image: url(https://preview.colorlib.com/theme/travelo/img/banner/newsletter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  padding: 7% 0;
+  position: relative;
+  overflow: hidden;
+  height: 15vh;
+}
+.subscribe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #040E27;
+  opacity: 0.7;
+}
+.subscribe .text {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  font-family: "Rubik";
+  z-index: 999;
+  width: 22%;
+}
+.subscribe .text h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+}
+.subscribe .text p {
+  font-size: 16px;
+  color: #B6BCC1;
+}
+.subscribe .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  z-index: 999;
+}
+.subscribe .form input {
+  padding: 15px 40% 15px 10px;
+  border: none;
+  border-radius: 10px;
+}
+.subscribe .form input::-moz-placeholder {
+  color: #B6BCC1;
+  font-size: 15px;
+  font-weight: 300;
+}
+.subscribe .form input::placeholder {
+  color: #B6BCC1;
+  font-size: 15px;
+  font-weight: 300;
+}
+.subscribe .form .btn {
+  background-color: #FF4A52;
+  color: white;
+  font-size: 20px;
+  padding: 13px;
+}
+
+.popular_places {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Rubik";
+  padding: 8%;
+}
+.popular_places h3 {
+  font-weight: 400;
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+.popular_places .heading {
+  color: #7A838B;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 30% 5% 30%;
+  line-height: 1.5;
+}
+.popular_places .popular_places_photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.popular_places .popular_places_photos .popular_places_item {
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.popular_places .popular_places_photos .popular_places_item:hover .popular_places_price a {
+  background-color: #FF4A52;
+}
+.popular_places .popular_places_photos .popular_places_item:hover .photo_info h3 {
+  color: #FF4A52;
+}
+.popular_places .popular_places_photos .popular_places_item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_price {
+  position: absolute;
+  margin-left: 25px;
+  top: 25px;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_price a {
+  transition: 0.4s;
+  background-color: #1EC6B6;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+  padding: 7px 15px;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 18px;
+  gap: 20px;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_info h3 {
+  transition: 0.4s;
+  font-size: 22px;
+  font-weight: 400;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_info p {
+  font-size: 14px;
+  color: #82838B;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  font-size: 14px;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star {
+  display: flex;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star i {
+  font-size: 14px;
+  color: #FDAE5C;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star span {
+  margin-left: 5px;
+  color: #82838B;
+}
+.popular_places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-day {
+  display: flex;
+  gap: 10px;
+  color: #82838B;
+}
+.popular_places .btn {
+  margin: 7% auto;
+  background-color: #FF4A52;
+  transition: 0.2s;
+}
+.popular_places .btn a {
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+}
+.popular_places .btn:hover {
+  background-color: #1EC6B6;
+}
+
+.tour-benefits {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Rubik";
+  padding: 0 12% 5% 12%;
+}
+.tour-benefits .feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tour-benefits .feature-card h3 {
+  padding: 25px;
+  font-weight: 400;
+  font-size: 22px;
+}
+.tour-benefits .feature-card p {
+  line-height: 1.5;
+  font-size: 17px;
+  text-align: center;
+  color: #757575;
+}
+
+.comment-section {
+  padding: 10% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F7FAFD;
+}
+.comment-section .author_image {
+  position: relative;
+}
+.comment-section .quote {
+  position: absolute;
+  background-color: #1EC6B6;
+  color: white;
+  border-radius: 50%;
+  margin-left: 5rem;
+  margin-bottom: 5%;
+  padding: 17px;
+}
+.comment-section .text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Rubik";
+  gap: 15px;
+}
+.comment-section .text p {
+  text-align: center;
+  padding: 0 17%;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.comment-section .text span {
+  font-size: 16px;
+  color: #757575;
+}
+.comment-section .circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.comment-section .circles .item {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #AAB1B7;
+}
+.comment-section .circles .item:first-child {
+  background-color: #FF4A52;
+}
+
+.recent-trips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik";
+  flex-direction: column;
+  padding: 40px;
+}
+.recent-trips h3 {
+  padding: 5%;
+  font-size: 35px;
+  font-weight: 400;
+}
+.recent-trips .recent-trips_photos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 0 10%;
+}
+.recent-trips .recent-trips_photos .item {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.recent-trips .recent-trips_photos .item:hover p {
+  color: #FF4A52;
+}
+.recent-trips .recent-trips_photos .item span {
+  padding: 20px 0;
+  font-size: 14px;
+  color: #757575;
+}
+.recent-trips .recent-trips_photos .item p {
+  font-size: 22px;
+  padding: 0 15% 0 0;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+@media (max-width: 991px) {
+  .image-section .image {
+    height: 50vh;
+  }
+  .image-section .text {
+    gap: 20px;
+  }
+  .image-section .text h3 {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+  .image-section .text p {
+    text-align: center;
+  }
+  .image-section .text .btn {
+    margin-top: 0;
+  }
+  .information {
+    display: flex;
+    height: 50vh;
+  }
+  .information .form {
+    align-items: start;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .information .form input {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .information .form select {
+    width: 100%;
+  }
+  .popular_destination {
+    padding: 15% 10px;
+  }
+  .popular_destination h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .popular_destination p {
+    padding: 15px 5px;
+    line-height: 1.5;
+  }
+  .popular_destination .popular_destination_photos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .subscribe {
+    justify-content: center;
+    height: 45vh;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .subscribe .text {
+    width: 100%;
+  }
+  .subscribe .form {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .subscribe .form input {
+    padding: 10px 0;
+    width: 100%;
+  }
+  .subscribe .form .btn {
+    width: 100%;
+  }
+  .popular_places .heading {
+    padding: 10px 0 40px 0;
+  }
+  .popular_places .popular_places_photos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tour-benefits {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .tour-benefits .feature-card h3 {
+    padding: 15px 0 8px 0;
+  }
+  .recent-trips h3 {
+    padding: 10% 0 30px 0;
+  }
+  .recent-trips .recent-trips_photos {
+    flex-direction: column;
+  }
+}
+.image-section-about {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+.image-section-about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  opacity: 0.2;
+}
+.image-section-about img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.image-section-about .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.image-section-about .text h3 {
+  font-family: "Nothing You Could Do";
+  font-size: 70px;
+  letter-spacing: 8px;
+  font-weight: 400;
+  color: #fff;
+}
+.image-section-about .text p {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.story-section {
+  font-family: "Rubik";
+}
+.story-section h3 {
+  padding: 10% 13% 3%;
+  font-size: 38px;
+  font-weight: 400;
+}
+.story-section .story-section_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 30% 5% 17%;
+  color: #7A838B;
+}
+.story-section .story-section_text p {
+  line-height: 2;
+  font-size: 16px;
+}
+.story-section .story-section_photos {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 16%;
+}
+.story-section .story-section_tour {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3% 15%;
+}
+.story-section .story-section_tour .tour_number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.story-section .story-section_tour .tour_number span {
+  font-size: 60px;
+  color: #FF4A52;
+}
+.story-section .story-section_tour .tour_number p {
+  color: #7A838B;
+  margin-top: 20px;
+}
+
+.video-section {
+  margin: 5% 0;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+.video-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  opacity: 0.2;
+}
+.video-section img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video-section .video-section_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.video-section .video-section_text h3 {
+  font-family: "Nothing You Could Do";
+  font-size: 80px;
+  letter-spacing: 8px;
+  font-weight: 400;
+  color: #fff;
+}
+.video-section .video-section_text a .btn-video {
+  border: none;
+  width: 90px;
+  height: 90px;
+  padding: 10%;
+  background-color: #1EC6B6;
+  border-radius: 50%;
+}
+.video-section .video-section_text a .btn-video i {
+  font-size: 20px;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik";
+  background-color: #040E27;
+  color: white;
+}
+footer .info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10%;
+  color: #AAB1B7;
+  padding-bottom: 5%;
+}
+footer .info .logo_and_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 7%;
+}
+footer .info .logo_and_info .logo_image {
+  padding-bottom: 7%;
+}
+footer .info .logo_and_info p {
+  padding-right: 35%;
+  line-height: 1.5;
+}
+footer .info .logo_and_info .social {
+  padding-top: 10%;
+  display: flex;
+  padding-right: 40%;
+  justify-content: space-between;
+}
+footer .info .addition {
+  display: flex;
+  gap: 40px;
+}
+footer .info .addition h3 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 10%;
+  color: white;
+}
+footer .info .addition .company ul {
+  line-height: 2;
+}
+footer .info .addition .company ul li a {
+  color: #AAB1B7;
+}
+footer .info .addition .popular-destination .all-list {
+  display: flex;
+  gap: 25px;
+  line-height: 2;
+}
+footer .info .addition .popular-destination .all-list a {
+  color: #AAB1B7;
+}
+footer .info .addition .instagram .instagram-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+footer .ending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #7A838B;
+  border-top: 1px solid #7A838B;
+  padding: 3% 20% 20px 20%;
+}
+footer .ending p:first-child {
+  border-right: 2px solid #7A838B;
+  padding: 0 15px;
+}
+footer .ending p:last-child span {
+  color: #FF4A52;
+}
+
+.btn {
+  padding: 20px 50px;
+  background-color: #1EC6B6;
+  border-radius: 7px;
+  border: none;
+}/*# sourceMappingURL=main.css.map */
