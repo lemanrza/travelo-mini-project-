@@ -8,6 +8,7 @@
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./src/css/main.css">
+  <link rel="stylesheet" href="./src/sass/abstracts/_mixins.scss">
   <title>Travelo</title>
 </head>
 
@@ -46,9 +47,9 @@
       <div class="box"><i class="fa-solid fa-magnifying-glass"></i></div>
     </div>
   </header>
-   <main>
-    <section class="image-section">
-      <img src="./src/assets/images/hero-section.png" alt="">
+  <main>
+    <section class="image-section_home">
+      <img src="./src/assets/images/hero-section.png" alt="Hero Section">
       <div class="text">
         <h3>Australia</h3>
         <p>Pixel perfect design with awesome content</p>
@@ -296,15 +297,15 @@
       </div>
     </section>
     <section class="video-section">
-        <img src="./src/assets/images/video.png" alt="">
-    <div class="video-section_text">
+      <img src="./src/assets/images/video.png" alt="">
+      <div class="video-section_text">
         <h3>Enjoy Video</h3>
         <a href="#">
-            <button class="btn-video">
-                <i class="fa-solid fa-play"></i>
-            </button>
+          <button class="btn-video">
+            <i class="fa-solid fa-play"></i>
+          </button>
         </a>
-    </div>
+      </div>
     </section>
     <section class="tour-benefits">
       <div class="feature-card">
@@ -380,21 +381,22 @@
       </div>
     </section>
     <section class="comment-section">
-<div class="author_image">
-  <img src="./src/assets/images/author.png" alt="">
-</div>
-<div class="quote">
-  <i class="fa-solid fa-quote-left"></i>
-</div>
-<div class="text">
-  <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
-  <span>-Micky Mouse</span>
-</div>
-<div class="circles">
-  <div class="item"></div>
-  <div class="item"></div>
-  <div class="item"></div>
-</div>
+      <div class="author_image">
+        <img src="./src/assets/images/author.png" alt="">
+      </div>
+      <div class="quote">
+        <i class="fa-solid fa-quote-left"></i>
+      </div>
+      <div class="text">
+        <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human
+          suffering.</p>
+        <span>-Micky Mouse</span>
+      </div>
+      <div class="circles">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
     </section>
     <section class="recent-trips">
       <h3>Recent Trips</h3>
@@ -418,69 +420,69 @@
     </section>
   </main>
   <footer>
-<div class="info">
-  <div class="logo_and_info">
-<div class="logo_image">    
-  <a href="./index.html"><img src="./src/assets/images/footer_logo.png" alt=""></a>
-</div>   
- <p>5th flora, 700/D kings road, green
-      lane New York-1782
-      </p>
-      <span class="phone_number">+10 367 826 2567</span>
-      <span class="mail_info">contact@carpenter.com</span>
-      <div class="social">
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-pinterest"></i>
-        <i class="fa-brands fa-youtube"></i>
+    <div class="info">
+      <div class="logo_and_info">
+        <div class="logo_image">
+          <a href="./index.html"><img src="./src/assets/images/footer_logo.png" alt=""></a>
+        </div>
+        <p>5th flora, 700/D kings road, green
+          lane New York-1782
+        </p>
+        <span class="phone_number">+10 367 826 2567</span>
+        <span class="mail_info">contact@carpenter.com</span>
+        <div class="social">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
       </div>
-  </div>
-  <div class="addition">
-    <div class="company">
-      <h3>Company</h3>
-      <ul>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <div class="addition">
+        <div class="company">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="popular-destination">
+          <h3>Popular Destination</h3>
+          <div class="all-list">
+            <ul>
+              <li><a href="#">Indonesia</a></li>
+              <li><a href="#">India</a></li>
+              <li><a href="#">Italy</a></li>
+              <li><a href="#">Franch</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">America</a></li>
+              <li><a href="#">Switzerland</a></li>
+              <li><a href="#">Canada</a></li>
+              <li><a href="#">England</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="instagram">
+          <h3>Instagram</h3>
+          <div class="instagram-photos">
+            <img src="./src/assets/images/instagram-1.png" alt="">
+            <img src="./src/assets/images/instagram-2.png" alt="">
+            <img src="./src/assets/images/instagram-3.png" alt="">
+            <img src="./src/assets/images/instagram-4.png" alt="">
+            <img src="./src/assets/images/instagram-5.png" alt="">
+            <img src="./src/assets/images/instagram-6.png" alt="">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="popular-destination">
-      <h3>Popular Destination</h3>
-  <div class="all-list"> 
-    <ul>
- <li><a href="#">Indonesia</a></li>
- <li><a href="#">India</a></li>
- <li><a href="#">Italy</a></li>
- <li><a href="#">Franch</a></li>
-</ul>
-     <ul>
-     <li><a href="#">America</a></li>
-     <li><a href="#">Switzerland</a></li>
-     <li><a href="#">Canada</a></li>
-     <li><a href="#">England</a></li>
-   </ul>
+    <div class="ending">
+      <p>Copyright ©2024 All rights reserved</p>
+      <p>This template is made with <i class="fa-regular fa-heart"></i> by <span>Colorlib</span></p>
     </div>
-    </div>
-    <div class="instagram">
-      <h3>Instagram</h3>
-  <div class="instagram-photos">
-    <img src="./src/assets/images/instagram-1.png" alt="">
-    <img src="./src/assets/images/instagram-2.png" alt="">
-    <img src="./src/assets/images/instagram-3.png" alt="">
-    <img src="./src/assets/images/instagram-4.png" alt="">
-    <img src="./src/assets/images/instagram-5.png" alt="">
-    <img src="./src/assets/images/instagram-6.png" alt="">
-  </div>
-    </div>
-  </div>
-</div>
-<div class="ending">
- <p>Copyright ©2024 All rights reserved</p>
- <p>This template is made with <i class="fa-regular fa-heart"></i> by <span>Colorlib</span></p>
-</div>
-  </footer> 
+  </footer>
 </body>
 
 </html>

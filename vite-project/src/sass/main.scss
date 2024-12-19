@@ -5,7 +5,9 @@
 @import "./layout/header";
 @import "./pages/home";
 @import "./pages/about";
-@import "./components/video-section";
-@import "./components/grid-cards";
-@import "./layout/footer";
+@import"./abstracts/mixins"; 
 @import "./components/buttons";
+@import "./pages/destination";
+@import "./components/repeated-sections";
+@import "./layout/footer";
+
