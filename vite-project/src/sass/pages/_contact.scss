@@ -151,4 +151,39 @@
 }
 }
 
-
+@media (max-width:991px) { 
+    .image-section_contact {
+            .image {
+                height: 30vh;
+            }
+    
+            .text {
+                gap: 20px;
+    
+                h3 {
+                    font-size: 60px;
+                    letter-spacing: 3px;
+                }
+    
+                p {
+                    text-align: center;
+                }
+            }
+        }
+        .map {
+            width: 100%;
+            margin: 0;
+        }
+    .communication{
+        flex-direction: column;
+        padding: 10px 40px 10px 12px;
+        gap: 20px;
+    .get-in-touch {
+        width: 100%;
+    }
+        .addition {
+            width: 100%;
+           margin-bottom: 20px;
+        }
+    }
+    }
