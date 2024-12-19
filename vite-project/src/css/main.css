@@ -1180,7 +1180,7 @@ header .connect .box i {
   }
   .information {
     display: flex;
-    height: 70vh;
+    height: 55vh;
   }
   .information .form {
     align-items: start;
@@ -1192,7 +1192,7 @@ header .connect .box i {
   }
   .information .form input {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
   }
   .information .form select {
