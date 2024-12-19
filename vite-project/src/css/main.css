@@ -996,6 +996,37 @@ header .connect .box i {
   color: #7A838B;
 }
 
+@media (max-width: 991px) {
+  .image-section_contact .image {
+    height: 30vh;
+  }
+  .image-section_contact .text {
+    gap: 20px;
+  }
+  .image-section_contact .text h3 {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+  .image-section_contact .text p {
+    text-align: center;
+  }
+  .map {
+    width: 100%;
+    margin: 0;
+  }
+  .communication {
+    flex-direction: column;
+    padding: 10px 40px 10px 12px;
+    gap: 20px;
+  }
+  .communication .get-in-touch {
+    width: 100%;
+  }
+  .communication .addition {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 .btn {
   padding: 20px 50px;
   background-color: #1EC6B6;
