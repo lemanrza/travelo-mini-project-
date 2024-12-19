@@ -1,0 +1,254 @@
+.image-section_destination {
+    width: 100%;
+    height: 73vh;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(18, 18, 18);
+        opacity: .1;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+
+        h3 {
+            font-family: "Nothing You Could Do";
+            font-size: 70px;
+            letter-spacing: 3px;
+            font-weight: 400;
+            color: #fff;
+        }
+
+        p {
+            font-family: "Rubik";
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}
+
+.filter-result_section {
+    display: flex;
+    justify-content: space-around;
+    padding: 10% 10%;
+    font-family: "Rubik";
+    .filter-result {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 25%;
+        gap: 20px;
+    
+        .filter-result_text {
+            h3 {
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            padding: 10% 5%;
+            border-radius: 10px;
+    
+            #selection {
+                border: 1px solid $dark-gray;
+                border-radius: 6px;
+                color: $dark-gray;
+                padding: 12px 10px;
+            }
+        }
+    
+        .btn {
+            background-color: $header-color;
+            color: white;
+            text-align: center;
+            transition: 0.4s;
+            font-weight: 500;
+    
+            &:hover {
+                background-color: $btn-color;
+            }
+        }
+    }
+    .popular-places {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        .popular_places_photos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+
+            .popular_places_item {
+                border-radius: 7px;
+                overflow: hidden;
+                position: relative;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+                &:hover {
+                    .popular_places_price {
+                        a {
+                            background-color: $header-color;
+                        }
+                    }
+
+                    .photo_info {
+                        h3 {
+                            color: $header-color;
+                        }
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .popular_places_price {
+                    position: absolute;
+                    margin-left: 25px;
+                    top: 25px;
+
+                    a {
+                        transition: 0.4s;
+                        background-color: $btn-color;
+                        color: white;
+                        font-size: 17px;
+                        border-radius: 20px;
+                        padding: 7px 15px;
+                    }
+                }
+
+                .popular_places_text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 20px 18px;
+                    gap: 20px;
+
+                    .photo_info {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+
+                        h3 {
+                            transition: 0.4s;
+                            font-size: 22px;
+                            font-weight: 400;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            color: #82838B;
+                        }
+                    }
+
+                    .photo_rating {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: start;
+                        font-size: 14px;
+
+                        .number-of-star {
+                            display: flex;
+
+                            i {
+                                font-size: 14px;
+                                color: #FDAE5C;
+                            }
+
+                            span {
+                                margin-left: 5px;
+                                color: #82838B;
+                            }
+                        }
+
+                        .number-of-day {
+                            display: flex;
+                            gap: 10px;
+                            color: #82838B;
+                        }
+                    }
+                }
+            }
+        }
+        .btn {
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            background-color: $header-color;
+            border-radius: 7px;
+            border: none;
+            a {
+              font-weight: 500;  
+            color: white;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:991px) {
+    .image-section_destination {
+        .image {
+            height: 50vh;
+        }
+
+        .text {
+            padding: 0 20px;
+            gap: 20px;
+
+            h3 {
+                // padding: 0 20px;
+                font-size: 50px;
+                letter-spacing: 3px;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+    .filter-result_section {
+        flex-direction: column;
+        gap: 20px;
+        .filter-result {
+            width: 100%;
+        }
+       .popular-places {
+        .popular_places_photos {
+            grid-template-columns: repeat(1, 1fr);
+        }
+       }
+    }
+}

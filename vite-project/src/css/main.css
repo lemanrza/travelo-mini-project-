@@ -248,93 +248,51 @@ header .connect .box i {
     padding: 25px;
   }
 }
-.image-section {
+.image-section_home {
+  height: 90vh;
   width: 100%;
-  height: 95vh;
   overflow: hidden;
   position: relative;
 }
-.image-section img {
+.image-section_home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  opacity: 0.1;
+}
+.image-section_home img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.image-section .text {
+.image-section_home .text {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: absolute;
+  margin-top: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
-.image-section .text h3 {
+.image-section_home .text h3 {
   font-family: "Nothing You Could Do";
-  font-size: 130px;
-  letter-spacing: 8px;
+  font-size: 70px;
+  letter-spacing: 3px;
   font-weight: 400;
   color: #fff;
 }
-.image-section .text p {
+.image-section_home .text p {
   font-family: "Rubik";
   font-size: 18px;
   font-weight: 400;
-}
-.image-section .text .btn {
-  color: white;
-  font-family: "Rubik";
-  font-weight: 500;
-  font-size: 15px;
-  margin-top: 2rem;
-  transition: 0.4s;
-}
-.image-section .text .btn:hover {
-  background-color: #FF4A52;
-}
-
-.information {
-  height: 20vh;
-  width: 100%;
-  background-color: #040E27;
-  padding: 0 14%;
-}
-.information .form {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 50px 40px;
-  font-family: "Rubik";
-}
-.information .form h3 {
-  font-size: 24px;
-  color: #fff;
-  font-weight: 400;
-}
-.information .form input {
-  border: 1px solid white;
-  border-radius: 7px;
-  background-color: transparent;
-  padding: 15px;
-}
-.information .form select {
-  border: 1px solid white;
-  border-radius: 7px;
-  background-color: transparent;
-  padding: 15px 10px;
-  color: #757575;
-}
-.information .form .btn {
-  background-color: #FF4A52;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  transition: 0.4s;
-}
-.information .form .btn:hover {
-  background-color: #1EC6B6;
 }
 
 .popular_destination {
@@ -410,76 +368,6 @@ header .connect .box i {
   border-radius: 20px;
   padding: 5px 12px;
   transition: 0.4s;
-}
-
-.subscribe {
-  background-image: url(https://preview.colorlib.com/theme/travelo/img/banner/newsletter.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 40px;
-  padding: 7% 0;
-  position: relative;
-  overflow: hidden;
-  height: 15vh;
-}
-.subscribe::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #040E27;
-  opacity: 0.7;
-}
-.subscribe .text {
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  font-family: "Rubik";
-  z-index: 999;
-  width: 22%;
-}
-.subscribe .text h4 {
-  font-size: 24px;
-  font-weight: 400;
-  color: white;
-}
-.subscribe .text p {
-  font-size: 16px;
-  color: #B6BCC1;
-}
-.subscribe .form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  z-index: 999;
-}
-.subscribe .form input {
-  padding: 15px 40% 15px 10px;
-  border: none;
-  border-radius: 10px;
-}
-.subscribe .form input::-moz-placeholder {
-  color: #B6BCC1;
-  font-size: 15px;
-  font-weight: 300;
-}
-.subscribe .form input::placeholder {
-  color: #B6BCC1;
-  font-size: 15px;
-  font-weight: 300;
-}
-.subscribe .form .btn {
-  background-color: #FF4A52;
-  color: white;
-  font-size: 20px;
-  padding: 13px;
 }
 
 .popular_places {
@@ -594,47 +482,6 @@ header .connect .box i {
   background-color: #FF4A52;
 }
 
-.recent-trips {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Rubik";
-  flex-direction: column;
-  padding: 40px;
-}
-.recent-trips h3 {
-  padding: 5%;
-  font-size: 35px;
-  font-weight: 400;
-}
-.recent-trips .recent-trips_photos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 0 10%;
-}
-.recent-trips .recent-trips_photos .item {
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.recent-trips .recent-trips_photos .item:hover p {
-  color: #FF4A52;
-}
-.recent-trips .recent-trips_photos .item span {
-  padding: 20px 0;
-  font-size: 14px;
-  color: #757575;
-}
-.recent-trips .recent-trips_photos .item p {
-  font-size: 22px;
-  padding: 0 15% 0 0;
-  text-transform: capitalize;
-  transition: 0.3s;
-}
-
 @media (max-width: 991px) {
   .image-section .image {
     height: 50vh;
@@ -652,26 +499,6 @@ header .connect .box i {
   .image-section .text .btn {
     margin-top: 0;
   }
-  .information {
-    display: flex;
-    height: 70vh;
-  }
-  .information .form {
-    align-items: start;
-    padding: 30px 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-  }
-  .information .form input {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-  }
-  .information .form select {
-    width: 100%;
-  }
   .popular_destination {
     padding: 15% 10px;
   }
@@ -686,27 +513,6 @@ header .connect .box i {
   .popular_destination .popular_destination_photos {
     grid-template-columns: repeat(1, 1fr);
   }
-  .subscribe {
-    justify-content: center;
-    height: 45vh;
-    flex-direction: column;
-    padding: 0 10px;
-  }
-  .subscribe .text {
-    width: 100%;
-  }
-  .subscribe .form {
-    width: 100%;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .subscribe .form input {
-    padding: 10px 0;
-    width: 100%;
-  }
-  .subscribe .form .btn {
-    width: 100%;
-  }
   .popular_places .heading {
     padding: 10px 0 40px 0;
   }
@@ -720,24 +526,14 @@ header .connect .box i {
   .tour-benefits .feature-card h3 {
     padding: 15px 0 8px 0;
   }
-  .recent-trips {
-    padding: 0;
-  }
-  .recent-trips h3 {
-    padding: 10% 0 30px 0;
-  }
-  .recent-trips .recent-trips_photos {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 1rem 4%;
-  }
 }
-.image-section-about {
+.image-section_about {
+  height: 70vh;
   width: 100%;
-  height: 60vh;
   overflow: hidden;
   position: relative;
 }
-.image-section-about::before {
+.image-section_about::before {
   content: "";
   position: absolute;
   top: 0;
@@ -745,33 +541,34 @@ header .connect .box i {
   height: 100%;
   width: 100%;
   background-color: rgb(18, 18, 18);
-  opacity: 0.2;
+  opacity: 0.1;
 }
-.image-section-about img {
+.image-section_about img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.image-section-about .text {
+.image-section_about .text {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: absolute;
+  margin-top: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
-.image-section-about .text h3 {
+.image-section_about .text h3 {
   font-family: "Nothing You Could Do";
   font-size: 70px;
-  letter-spacing: 8px;
+  letter-spacing: 3px;
   font-weight: 400;
   color: #fff;
 }
-.image-section-about .text p {
+.image-section_about .text p {
   font-family: "Rubik";
   font-size: 18px;
   font-weight: 400;
@@ -852,14 +649,20 @@ header .connect .box i {
     gap: 20px;
   }
 }
-.video-section {
-  margin: 5% 0;
+.btn {
+  padding: 20px 50px;
+  background-color: #1EC6B6;
+  border-radius: 7px;
+  border: none;
+}
+
+.image-section_destination {
   width: 100%;
-  height: 70vh;
+  height: 73vh;
   overflow: hidden;
   position: relative;
 }
-.video-section::before {
+.image-section_destination::before {
   content: "";
   position: absolute;
   top: 0;
@@ -867,56 +670,203 @@ header .connect .box i {
   height: 100%;
   width: 100%;
   background-color: rgb(18, 18, 18);
-  opacity: 0.2;
+  opacity: 0.1;
 }
-.video-section img {
+.image-section_destination img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.video-section .video-section_text {
+.image-section_destination .text {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: absolute;
+  margin-top: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
-.video-section .video-section_text h3 {
+.image-section_destination .text h3 {
   font-family: "Nothing You Could Do";
-  font-size: 80px;
-  letter-spacing: 8px;
+  font-size: 70px;
+  letter-spacing: 3px;
   font-weight: 400;
   color: #fff;
 }
-.video-section .video-section_text a .btn-video {
-  border: none;
-  width: 90px;
-  height: 90px;
-  padding: 10%;
-  background-color: #1EC6B6;
-  border-radius: 50%;
+.image-section_destination .text p {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
 }
-.video-section .video-section_text a .btn-video i {
-  font-size: 20px;
+
+.filter-result_section {
+  display: flex;
+  justify-content: space-around;
+  padding: 10% 10%;
+  font-family: "Rubik";
+}
+.filter-result_section .filter-result {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25%;
+  gap: 20px;
+}
+.filter-result_section .filter-result .filter-result_text h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.filter-result_section .filter-result .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 10% 5%;
+  border-radius: 10px;
+}
+.filter-result_section .filter-result .form #selection {
+  border: 1px solid #7A838B;
+  border-radius: 6px;
+  color: #7A838B;
+  padding: 12px 10px;
+}
+.filter-result_section .filter-result .btn {
+  background-color: #FF4A52;
+  color: white;
+  text-align: center;
+  transition: 0.4s;
+  font-weight: 500;
+}
+.filter-result_section .filter-result .btn:hover {
+  background-color: #1EC6B6;
+}
+.filter-result_section .popular-places {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.filter-result_section .popular-places .popular_places_photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item {
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item:hover .popular_places_price a {
+  background-color: #FF4A52;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item:hover .photo_info h3 {
+  color: #FF4A52;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item .popular_places_price {
+  position: absolute;
+  margin-left: 25px;
+  top: 25px;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item .popular_places_price a {
+  transition: 0.4s;
+  background-color: #1EC6B6;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+  padding: 7px 15px;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item .popular_places_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 18px;
+  gap: 20px;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item .popular_places_text .photo_info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item .popular_places_text .photo_info h3 {
+  transition: 0.4s;
+  font-size: 22px;
+  font-weight: 400;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item .popular_places_text .photo_info p {
+  font-size: 14px;
+  color: #82838B;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item .popular_places_text .photo_rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  font-size: 14px;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star {
+  display: flex;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star i {
+  font-size: 14px;
+  color: #FDAE5C;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-star span {
+  margin-left: 5px;
+  color: #82838B;
+}
+.filter-result_section .popular-places .popular_places_photos .popular_places_item .popular_places_text .photo_rating .number-of-day {
+  display: flex;
+  gap: 10px;
+  color: #82838B;
+}
+.filter-result_section .popular-places .btn {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #FF4A52;
+  border-radius: 7px;
+  border: none;
+}
+.filter-result_section .popular-places .btn a {
+  font-weight: 500;
   color: white;
 }
 
 @media (max-width: 991px) {
-  .video-section {
-    height: 60vh;
+  .image-section_destination .image {
+    height: 50vh;
   }
-  .video-section .video-section_text {
-    width: 100%;
+  .image-section_destination .text {
+    padding: 0 20px;
+    gap: 20px;
   }
-  .video-section .video-section_text h3 {
-    text-align: center;
+  .image-section_destination .text h3 {
     font-size: 50px;
     letter-spacing: 3px;
+  }
+  .image-section_destination .text p {
+    text-align: center;
+  }
+  .filter-result_section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .filter-result_section .filter-result {
+    width: 100%;
+  }
+  .filter-result_section .popular-places .popular_places_photos {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .popular_places_photos {
@@ -999,6 +949,287 @@ header .connect .box i {
   color: #82838B;
 }
 
+.video-section {
+  margin: 5% 0;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+.video-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  opacity: 0.2;
+}
+.video-section img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video-section .video-section_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.video-section .video-section_text h3 {
+  font-family: "Nothing You Could Do";
+  font-size: 80px;
+  letter-spacing: 8px;
+  font-weight: 400;
+  color: #fff;
+}
+.video-section .video-section_text a .btn-video {
+  border: none;
+  width: 90px;
+  height: 90px;
+  padding: 10%;
+  background-color: #1EC6B6;
+  border-radius: 50%;
+}
+.video-section .video-section_text a .btn-video i {
+  font-size: 20px;
+  color: white;
+}
+
+.information {
+  height: 20vh;
+  width: 100%;
+  background-color: #040E27;
+  padding: 0 10% 0 14%;
+}
+.information .form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 20px;
+  font-family: "Rubik";
+  gap: 10px;
+}
+.information .form h3 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+}
+.information .form input {
+  border: 1px solid #7A838B;
+  border-radius: 7px;
+  background-color: transparent;
+  padding: 15px;
+}
+.information .form input::-moz-placeholder {
+  font-size: 17px;
+}
+.information .form input::placeholder {
+  font-size: 17px;
+}
+.information .form select {
+  border: 1px solid #7A838B;
+  border-radius: 7px;
+  background-color: transparent;
+  padding: 15px 6%;
+  color: #757575;
+}
+.information .form .btn {
+  background-color: #FF4A52;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.information .form .btn:hover {
+  background-color: #1EC6B6;
+}
+
+.subscribe {
+  background-image: url(https://preview.colorlib.com/theme/travelo/img/banner/newsletter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  padding: 7% 0;
+  position: relative;
+  overflow: hidden;
+  height: 15vh;
+}
+.subscribe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #040E27;
+  opacity: 0.7;
+}
+.subscribe .text {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  font-family: "Rubik";
+  z-index: 999;
+  width: 22%;
+}
+.subscribe .text h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+}
+.subscribe .text p {
+  font-size: 16px;
+  color: #B6BCC1;
+}
+.subscribe .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  z-index: 999;
+}
+.subscribe .form input {
+  padding: 15px 40% 15px 10px;
+  border: none;
+  border-radius: 10px;
+}
+.subscribe .form input::-moz-placeholder {
+  color: #B6BCC1;
+  font-size: 15px;
+  font-weight: 300;
+}
+.subscribe .form input::placeholder {
+  color: #B6BCC1;
+  font-size: 15px;
+  font-weight: 300;
+}
+.subscribe .form .btn {
+  background-color: #FF4A52;
+  color: white;
+  font-size: 20px;
+  padding: 13px;
+}
+
+.recent-trips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Rubik";
+  flex-direction: column;
+  padding: 40px;
+}
+.recent-trips h3 {
+  padding: 5%;
+  font-size: 35px;
+  font-weight: 400;
+}
+.recent-trips .recent-trips_photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 10%;
+}
+.recent-trips .recent-trips_photos .item {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.recent-trips .recent-trips_photos .item:hover p {
+  color: #FF4A52;
+}
+.recent-trips .recent-trips_photos .item span {
+  padding: 20px 0;
+  font-size: 14px;
+  color: #757575;
+}
+.recent-trips .recent-trips_photos .item p {
+  font-size: 22px;
+  padding: 0 15% 0 0;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+@media (max-width: 991px) {
+  .video-section {
+    height: 60vh;
+  }
+  .video-section .video-section_text {
+    width: 100%;
+  }
+  .video-section .video-section_text h3 {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 3px;
+  }
+  .popular_places_photos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .information {
+    display: flex;
+    height: 70vh;
+  }
+  .information .form {
+    align-items: start;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .information .form input {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .information .form select {
+    width: 100%;
+  }
+  .subscribe {
+    justify-content: center;
+    height: 45vh;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .subscribe .text {
+    width: 100%;
+  }
+  .subscribe .form {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .subscribe .form input {
+    padding: 10px 0;
+    width: 100%;
+  }
+  .subscribe .form .btn {
+    width: 100%;
+  }
+  .recent-trips {
+    padding: 0;
+  }
+  .recent-trips h3 {
+    padding: 10% 0 30px 0;
+  }
+  .recent-trips .recent-trips_photos {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem 4%;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -1098,10 +1329,4 @@ footer .ending p:last-child span {
     flex-direction: column;
     padding: 3% 0;
   }
-}
-.btn {
-  padding: 20px 50px;
-  background-color: #1EC6B6;
-  border-radius: 7px;
-  border: none;
 }/*# sourceMappingURL=main.css.map */

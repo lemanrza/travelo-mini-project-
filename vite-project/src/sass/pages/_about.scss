@@ -1,6 +1,10 @@
-.image-section-about {
+// @include image-section_about(90vh);
+// .image-section_about {
+//     @include image-section_about (60vh);
+// }
+.image-section_about {
+    height: 70vh;
     width: 100%;
-    height: 60vh;
     overflow: hidden;
     position: relative;
 
@@ -12,42 +16,38 @@
         height: 100%;
         width: 100%;
         background-color: rgb(18, 18, 18);
-        opacity: .2;
+        opacity: .1;
     }
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .text {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-
-        h3 {
-            font-family: "Nothing You Could Do";
-            font-size: 70px;
-            letter-spacing: 8px;
-            font-weight: 400;
-            color: #fff;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-
-        p {
-            font-family: "Rubik";
-            font-size: 18px;
-            font-weight: 400;
-        }
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            margin-top: 20px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            h3 {
+                font-family: "Nothing You Could Do";
+                font-size: 70px;
+                letter-spacing: 3px;
+                font-weight: 400;
+                color: #fff;
+            }
+            p {
+                font-family: "Rubik";
+                font-size: 18px;
+                font-weight: 400;
+            }
     }
 }
-
 .story-section {
     font-family: "Rubik";
 
@@ -144,5 +144,4 @@
             gap: 20px;
         }
     }
-    
 }

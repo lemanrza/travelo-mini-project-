@@ -1,0 +1,95 @@
+
+// @mixin image-section_about ($height) {
+//     height: $height;
+//     width: 100%;
+//     overflow: hidden;
+//     position: relative;
+
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         height: 100%;
+//         width: 100%;
+//         background-color: rgb(18, 18, 18);
+//         opacity: .1;
+//     }
+//         img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//         }
+//         .text {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             flex-direction: column;
+//             position: absolute;
+//             margin-top: 20px;
+//             top: 50%;
+//             left: 50%;
+//             transform: translate(-50%, -50%);
+//             color: white;
+//             h3 {
+//                 font-family: "Nothing You Could Do";
+//                 font-size: 70px;
+//                 letter-spacing: 3px;
+//                 font-weight: 400;
+//                 color: #fff;
+//             }
+//             p {
+//                 font-family: "Rubik";
+//                 font-size: 18px;
+//                 font-weight: 400;
+//             }
+//     }
+// }
+
+// @mixin image-section ($height) {
+//     height: $height;
+//     width: 100%;
+//     overflow: hidden;
+//     position: relative;
+
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         height: 100%;
+//         width: 100%;
+//         background-color: rgb(18, 18, 18);
+//         opacity: .1;
+//     }
+//         img {
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//         }
+//         .text {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             flex-direction: column;
+//             position: absolute;
+//             margin-top: 20px;
+//             top: 50%;
+//             left: 50%;
+//             transform: translate(-50%, -50%);
+//             color: white;
+//             h3 {
+//                 font-family: "Nothing You Could Do";
+//                 font-size: 70px;
+//                 letter-spacing: 3px;
+//                 font-weight: 400;
+//                 color: #fff;
+//             }
+//             p {
+//                 font-family: "Rubik";
+//                 font-size: 18px;
+//                 font-weight: 400;
+//             }
+//     }
+// }
+// @mixin button($padding, $bgc-color)
