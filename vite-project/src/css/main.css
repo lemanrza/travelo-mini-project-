@@ -649,13 +649,6 @@ header .connect .box i {
     gap: 20px;
   }
 }
-.btn {
-  padding: 20px 50px;
-  background-color: #1EC6B6;
-  border-radius: 7px;
-  border: none;
-}
-
 .image-section_destination {
   width: 100%;
   height: 73vh;
@@ -869,6 +862,72 @@ header .connect .box i {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.image-section_contact {
+  height: 72vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.image-section_contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  opacity: 0.1;
+}
+.image-section_contact img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.image-section_contact .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.image-section_contact .text h3 {
+  font-family: "Nothing You Could Do";
+  font-size: 70px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: #fff;
+}
+.image-section_contact .text p {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 7%;
+  width: 80%;
+}
+.map iframe {
+  width: 100%;
+}
+
+.btn {
+  padding: 20px 50px;
+  background-color: #1EC6B6;
+  border-radius: 7px;
+  border: none;
+}
+
 .popular_places_photos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
