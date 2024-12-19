@@ -1,62 +1,154 @@
 .image-section_contact {
-        height: 72vh;
+    height: 72vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
         width: 100%;
-        overflow: hidden;
-        position: relative;
-    
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: rgb(18, 18, 18);
-            opacity: .1;
+        background-color: rgb(18, 18, 18);
+        opacity: .1;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+
+        h3 {
+            font-family: "Nothing You Could Do";
+            font-size: 70px;
+            letter-spacing: 3px;
+            font-weight: 400;
+            color: #fff;
         }
-    
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+
+        p {
+            font-family: "Rubik";
+            font-size: 18px;
+            font-weight: 400;
         }
-    
-        .text {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            position: absolute;
-            margin-top: 20px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-    
-            h3 {
-                font-family: "Nothing You Could Do";
-                font-size: 70px;
-                letter-spacing: 3px;
-                font-weight: 400;
-                color: #fff;
-            }
-    
-            p {
-                font-family: "Rubik";
-                font-size: 18px;
-                font-weight: 400;
-            }
-        }
-    
+    }
+
 }
+
 .map {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 7%;
-    width: 80%;
+    padding: 7% 10%;
+
     iframe {
         width: 100%;
     }
 }
+
+.communication {
+    font-family: "Rubik";
+    padding: 2rem 10% 10% 10%;
+    display: flex;
+    justify-content: space-between;
+
+    .get-in-touch {
+        width: 70%;
+
+        h2 {
+            font-size: 27px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: start;
+
+            textarea {
+                width: 100%;
+                height: 10rem;
+                padding: 10px;
+            }
+
+            .name-email {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 12px;
+
+                input {
+                    border: 1px solid $dark-gray;
+                    width: 100%;
+                    padding: 12px 15px;
+                }
+            }
+
+            input {
+                border: 1px solid $dark-gray;
+                width: 100%;
+                padding: 12px 15px;
+
+            }
+            .btn {
+                font-family: "Rubik";
+                text-transform: uppercase;
+                margin-top: 20px;
+                border-radius: 0;
+                color: white;
+            }
+        }
+    }
+
+    .addition {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 25%;
+        margin-top: 4%;
+        gap: 30px;
+
+        .addition_contact {
+            display: flex;
+            gap: 15px;
+            i {
+                font-size: 30px;
+                margin-top: 10px;
+                color: $dark-gray;
+            }
+.addition_text{
+    h3{
+        font-weight: 450;
+        font-size: 17px;
+        // color: #001D38;
+        color: #2A2A2A;
+    }
+    p {
+        line-height: 2;
+        color: $dark-gray;
+    }
+}
+}
+}
+}
+
+
