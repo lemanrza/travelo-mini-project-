@@ -249,20 +249,10 @@ header .connect .box i {
   }
 }
 .image-section_home {
-  height: 90vh;
   width: 100%;
+  height: 95vh;
   overflow: hidden;
   position: relative;
-}
-.image-section_home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(18, 18, 18);
-  opacity: 0.1;
 }
 .image-section_home img {
   width: 100%;
@@ -276,7 +266,6 @@ header .connect .box i {
   align-items: center;
   flex-direction: column;
   position: absolute;
-  margin-top: 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -284,8 +273,8 @@ header .connect .box i {
 }
 .image-section_home .text h3 {
   font-family: "Nothing You Could Do";
-  font-size: 70px;
-  letter-spacing: 3px;
+  font-size: 130px;
+  letter-spacing: 8px;
   font-weight: 400;
   color: #fff;
 }
@@ -293,6 +282,17 @@ header .connect .box i {
   font-family: "Rubik";
   font-size: 18px;
   font-weight: 400;
+}
+.image-section_home .text .btn {
+  color: white;
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 2rem;
+  transition: 0.4s;
+}
+.image-section_home .text .btn:hover {
+  background-color: #FF4A52;
 }
 
 .popular_destination {
@@ -1027,6 +1027,184 @@ header .connect .box i {
     margin-bottom: 20px;
   }
 }
+.image-section_blog {
+  height: 73vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.image-section_blog::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  opacity: 0.1;
+}
+.image-section_blog img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.image-section_blog .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.image-section_blog .text h3 {
+  font-family: "Nothing You Could Do";
+  font-size: 70px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: #fff;
+}
+.image-section_blog .text p {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.base {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0% 7%;
+}
+.base .title {
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik";
+  padding: 7% 0;
+  width: 60%;
+  gap: 40px;
+}
+.base .title .title-item {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.base .title .title-item .title-image {
+  position: relative;
+}
+.base .title .title-item .title-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.base .title .title-item .title-image .date {
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  background-color: #FF4A52;
+  color: white;
+  padding: 1.1rem 1.7rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.2s;
+}
+.base .title .title-item .title-image .date:hover {
+  background-color: transparent;
+  color: #FF4A52;
+}
+.base .title .title-item .title-image .date h3 {
+  font-weight: 700;
+  font-size: 25px;
+}
+.base .title .title-item .title-image .date p {
+  font-size: 18px;
+}
+.base .title .title-item .title-text {
+  padding: 3rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.base .title .title-item .title-text h2 {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.base .title .title-item .title-text h2:hover {
+  color: #FF4A52;
+}
+.base .title .title-item .title-text p {
+  line-height: 1.5;
+  color: #7A838B;
+  font-size: 16px;
+}
+.base .title .title-item .ending {
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 15px;
+  padding-bottom: 5%;
+}
+.base .title .title-item .ending a {
+  color: #7A838B;
+  font-size: 14px;
+}
+.base .title .title-item .ending a:hover {
+  color: #FF4A52;
+}
+.base .title .title-item .ending a i {
+  font-size: 12px;
+}
+.base .title .title-item .ending a:first-child {
+  border-right: 1px solid black;
+  padding-right: 3%;
+}
+.base .title .title-pages {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  margin-top: 7%;
+}
+.base .title .title-pages a {
+  color: black;
+}
+.base .title .title-pages a .box {
+  padding: 10px 15px;
+  border: 1px solid #B6BCC1;
+}
+.base .addition {
+  font-family: "Rubik";
+  display: flex;
+  align-items: start;
+  padding: 7% 0;
+}
+.base .addition .search-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #FBF9FF;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 10% 20%;
+}
+.base .addition .search-section input {
+  border: 1px solid #B6BCC1;
+  padding: 10px 50px 10px 10px;
+}
+.base .addition .search-section input::-moz-placeholder {
+  font-size: 15px;
+}
+.base .addition .search-section input::placeholder {
+  font-size: 15px;
+}
+.base .addition .search-section .btn {
+  font-size: 18px;
+  border-radius: 0;
+  color: white;
+  padding: 5%;
+  text-align: center;
+}
+
 .btn {
   padding: 20px 50px;
   background-color: #1EC6B6;
