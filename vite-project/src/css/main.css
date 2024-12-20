@@ -1259,9 +1259,52 @@ header .connect .box i {
 .base .addition .post-section .post-item .post-text h3 {
   font-weight: 500;
   font-size: 16px;
+  transition: 0.2s;
+  color: black;
+}
+.base .addition .post-section .post-item .post-text h3:hover {
+  color: #FF4A52;
+  cursor: pointer;
 }
 .base .addition .post-section .post-item .post-text p {
   color: #7A838B;
+}
+.base .addition .tag-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #FBF9FF;
+}
+.base .addition .tag-section h3 {
+  font-weight: 500;
+  font-size: 22px;
+  border-bottom: 1px solid #B6BCC1;
+  padding: 20px 0;
+  margin: 0 20px 20px;
+}
+.base .addition .tag-section .tag-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.base .addition .tag-section .tag-item ul {
+  padding: 20px;
+}
+.base .addition .tag-section .tag-item ul li {
+  display: inline;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #eeeeee;
+}
+.base .addition .tag-section .tag-item ul li a {
+  font-size: 14px;
+  line-height: 3;
+  padding: 20px 10px;
+  color: #7A838B;
+  transition: 0.2s;
+}
+.base .addition .tag-section .tag-item ul li:hover a {
+  color: white;
+  background-color: #FF4A52;
 }
 
 .btn {
