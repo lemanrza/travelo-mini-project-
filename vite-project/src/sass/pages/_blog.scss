@@ -246,6 +246,36 @@
                 }
             }
         }
+        .post-section {
+            display: flex;
+            flex-direction: column;
+            background-color: #FBF9FF;
+            gap: 20px;
+            padding: 5%;
+            .heading {
+                font-weight: 500;
+                font-size: 22px;
+                border-bottom: 1px solid $gray-color;
+                padding: 20px 0;
+                margin-bottom: 20px;
+            }
+            .post-item {
+                display: flex;
+                gap: 20px;
+                .post-text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    h3 {
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                    p {
+                        color: $dark-gray;
+                    }
+                }
+            }
+        }
     }
 
 }

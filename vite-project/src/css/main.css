@@ -1233,6 +1233,36 @@ header .connect .box i {
   padding-bottom: 20px;
   border-bottom: 1px solid #B6BCC1;
 }
+.base .addition .post-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #FBF9FF;
+  gap: 20px;
+  padding: 5%;
+}
+.base .addition .post-section .heading {
+  font-weight: 500;
+  font-size: 22px;
+  border-bottom: 1px solid #B6BCC1;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.base .addition .post-section .post-item {
+  display: flex;
+  gap: 20px;
+}
+.base .addition .post-section .post-item .post-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.base .addition .post-section .post-item .post-text h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.base .addition .post-section .post-item .post-text p {
+  color: #7A838B;
+}
 
 .btn {
   padding: 20px 50px;
