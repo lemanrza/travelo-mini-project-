@@ -1176,8 +1176,10 @@ header .connect .box i {
 .base .addition {
   font-family: "Rubik";
   display: flex;
-  align-items: start;
+  flex-direction: column;
   padding: 7% 0;
+  width: 25%;
+  gap: 20px;
 }
 .base .addition .search-section {
   display: flex;
@@ -1185,7 +1187,7 @@ header .connect .box i {
   gap: 20px;
   background-color: #FBF9FF;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  padding: 10% 20%;
+  padding: 10%;
 }
 .base .addition .search-section input {
   border: 1px solid #B6BCC1;
@@ -1203,6 +1205,63 @@ header .connect .box i {
   color: white;
   padding: 5%;
   text-align: center;
+}
+.base .addition .category-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #FBF9FF;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 3rem 2rem;
+}
+.base .addition .category-section h3 {
+  width: 100%;
+  font-weight: 500;
+  font-size: 22px;
+  padding-bottom: 20px;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #B6BCC1;
+}
+.base .addition .category-section .category-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.base .addition .category-section .category-item a {
+  color: #7A838B;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #B6BCC1;
+}
+.base .addition .post-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #FBF9FF;
+  gap: 20px;
+  padding: 5%;
+}
+.base .addition .post-section .heading {
+  font-weight: 500;
+  font-size: 22px;
+  border-bottom: 1px solid #B6BCC1;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.base .addition .post-section .post-item {
+  display: flex;
+  gap: 20px;
+}
+.base .addition .post-section .post-item .post-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.base .addition .post-section .post-item .post-text h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.base .addition .post-section .post-item .post-text p {
+  color: #7A838B;
 }
 
 .btn {
