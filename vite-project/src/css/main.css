@@ -483,22 +483,6 @@ header .connect .box i {
 }
 
 @media (max-width: 991px) {
-  .image-section_home .image {
-    height: 50vh;
-  }
-  .image-section_home .text {
-    gap: 20px;
-  }
-  .image-section_home .text h3 {
-    font-size: 60px;
-    letter-spacing: 3px;
-  }
-  .image-section_home .text p {
-    text-align: center;
-  }
-  .image-section_home .text .btn {
-    margin-top: 0;
-  }
   .popular_destination {
     padding: 15% 10px;
   }
@@ -619,20 +603,6 @@ header .connect .box i {
 }
 
 @media (max-width: 991px) {
-  .image-section-about .image {
-    height: 50vh;
-  }
-  .image-section-about .text {
-    padding: 0 20px;
-    gap: 20px;
-  }
-  .image-section-about .text h3 {
-    font-size: 40px;
-    letter-spacing: 3px;
-  }
-  .image-section-about .text p {
-    text-align: center;
-  }
   .story-section h3 {
     padding: 40px 14px 20px;
   }
@@ -1289,17 +1259,15 @@ header .connect .box i {
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
+  gap: 0.1rem;
 }
 .base .addition .tag-section .tag-item ul li {
-  display: inline;
-  padding: 6px 10px;
   background-color: #fff;
-  border: 1px solid #eeeeee;
 }
 .base .addition .tag-section .tag-item ul li a {
+  padding: 6px 10px;
   font-size: 14px;
   line-height: 3;
-  padding: 20px 10px;
   color: #7A838B;
   transition: 0.2s;
 }
@@ -1468,6 +1436,119 @@ header .connect .box i {
   padding: 7% 0;
   width: 60%;
   gap: 40px;
+  font-family: "Rubik";
+}
+.base .title .title-image {
+  width: 100%;
+}
+.base .title .title-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.base .title .title-image h2 {
+  font-size: 22px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.base .title .ending {
+  display: flex;
+  gap: 15px;
+}
+.base .title .ending a {
+  color: #7A838B;
+  font-size: 14px;
+}
+.base .title .ending a:hover {
+  color: #FF4A52;
+}
+.base .title .ending a i {
+  font-size: 12px;
+}
+.base .title .ending a:first-child {
+  border-right: 1px solid black;
+  padding-right: 3%;
+}
+.base .title .title-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.base .title .title-text p {
+  color: #7A838B;
+  line-height: 1.5;
+  font-size: 17px;
+}
+.base .title .card {
+  background-color: #F2F3F7;
+  padding: 5%;
+}
+.base .title .card .mini-card {
+  background-color: #fff;
+  padding: 5%;
+  border-left: 2px solid #7A838B;
+}
+.base .title .card .mini-card p {
+  color: #7A838B;
+  line-height: 1.5;
+}
+.base .title .title-post_information {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #7A838B;
+  border-bottom: 1px solid #7A838B;
+  padding: 5% 0;
+}
+.base .title .title-post_information .heading {
+  display: flex;
+  justify-content: space-between;
+  color: #7A838B;
+}
+.base .title .title-post_information .heading .title-like {
+  display: flex;
+  gap: 10px;
+}
+.base .title .title-post_information .heading .logo {
+  display: flex;
+  gap: 20px;
+}
+.base .title .title-post_information .ending {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.base .title .title-post_information .ending .pre-post {
+  display: flex;
+  text-align: start;
+  gap: 20px;
+}
+.base .title .title-post_information .ending .pre-post .pre-post_text {
+  margin-top: 5px;
+}
+.base .title .title-post_information .ending .pre-post .pre-post_text p {
+  color: #7A838B;
+  margin-bottom: 5px;
+}
+.base .title .title-post_information .ending .pre-post .pre-post_text h4 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.base .title .title-post_information .ending .next-post {
+  gap: 20px;
+  text-align: end;
+  display: flex;
+}
+.base .title .title-post_information .ending .next-post .next-post_text {
+  margin-top: 5px;
+}
+.base .title .title-post_information .ending .next-post .next-post_text p {
+  color: #7A838B;
+  margin-bottom: 5px;
+}
+.base .title .title-post_information .ending .next-post .next-post_text h4 {
+  font-weight: 500;
+  font-size: 18px;
 }
 .base .addition {
   font-family: "Rubik";

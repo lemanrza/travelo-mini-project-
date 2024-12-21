@@ -50,7 +50,7 @@
     }
 }
 // .image-section_home {
-//     @include image-section (90vh);
+//     @include image-section(90vh);
 // }
 
 .popular_destination {
@@ -282,28 +282,28 @@
 
 
 @media (max-width:991px) {
-    .image-section_home {
-        .image {
-            height: 50vh;
-        }
+    // .image-section_home {
+    //     .image {
+    //         height: 50vh;
+    //     }
 
-        .text {
-            gap: 20px;
+    //     .text {
+    //         gap: 20px;
 
-            h3 {
-                font-size: 60px;
-                letter-spacing: 3px;
-            }
+    //         h3 {
+    //             font-size: 60px;
+    //             letter-spacing: 3px;
+    //         }
 
-            p {
-                text-align: center;
-            }
+    //         p {
+    //             text-align: center;
+    //         }
 
-            .btn {
-                margin-top: 0;
-            }
-        }
-    }
+    //         .btn {
+    //             margin-top: 0;
+    //         }
+    //     }
+    // }
 
     .popular_destination {
         padding: 15% 10px;

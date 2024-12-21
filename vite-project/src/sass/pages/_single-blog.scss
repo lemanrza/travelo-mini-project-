@@ -49,20 +49,160 @@
         }
     }
 }
+
 .base {
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 0% 7%;
-.title {
-    display: flex;
-    flex-direction: column;
-    font-family: "Rubik";
-    padding: 7% 0;
-    width: 60%;
-    gap: 40px;
-    
-}
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        font-family: "Rubik";
+        padding: 7% 0;
+        width: 60%;
+        gap: 40px;
+        font-family: "Rubik";
+
+        .title-image {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            h2 {
+                font-size: 22px;
+                margin-top: 20px;
+                font-weight: 600;
+            }
+        }
+
+        .ending {
+            display: flex;
+            gap: 15px;
+            // padding-bottom: 5%;
+
+            a {
+                color: $dark-gray;
+                font-size: 14px;
+
+                &:hover {
+                    color: $header-color;
+                }
+
+                i {
+                    font-size: 12px;
+                }
+
+                &:first-child {
+                    border-right: 1px solid black;
+                    padding-right: 3%;
+                }
+            }
+
+        }
+
+        .title-text {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            p {
+                color: $dark-gray;
+                line-height: 1.5;
+                font-size: 17px;
+            }
+        }
+
+        .card {
+            background-color: #F2F3F7;
+            padding: 5%;
+
+            .mini-card {
+                background-color: #fff;
+                padding: 5%;
+                border-left: 2px solid $dark-gray;
+
+                p {
+                    color: $dark-gray;
+                    line-height: 1.5;
+
+                }
+            }
+        }
+
+        .title-post_information {
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid $dark-gray;
+            border-bottom: 1px solid $dark-gray;
+            padding: 5% 0;
+            .heading {
+                display: flex;
+                justify-content: space-between;
+                color: $dark-gray;
+
+                .title-like {
+                    display: flex;
+                    gap: 10px;
+                }
+
+                .logo {
+                    display: flex;
+                    gap: 20px;
+                }
+            }
+
+            .ending {
+                margin-top: 5%;
+                display: flex;
+                justify-content: space-between;
+
+                .pre-post {
+                    display: flex;
+                    text-align: start;
+                    gap: 20px;
+
+                    .pre-post_text {
+                        margin-top: 5px;
+                        p {
+                            color: $dark-gray;
+                            margin-bottom: 5px;
+
+                        }
+                        h4 {
+                            font-weight: 500;
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                .next-post {
+                    gap: 20px;
+                    text-align: end;
+                    display: flex;
+
+                    .next-post_text {
+                        margin-top: 5px;
+                        p {
+                            color: $dark-gray;
+                            margin-bottom: 5px;
+
+                        }
+                        h4 {
+                            font-weight: 500;
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
 
     .addition {
         font-family: "Rubik";
