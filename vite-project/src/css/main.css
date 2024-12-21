@@ -1481,7 +1481,7 @@ header .connect .box i {
   font-size: 17px;
 }
 .base .title .card {
-  background-color: #F2F3F7;
+  background-color: #FBF9FF;
   padding: 5%;
 }
 .base .title .card .mini-card {
@@ -1536,8 +1536,8 @@ header .connect .box i {
 }
 .base .title .title-post_information .ending .next-post {
   gap: 20px;
-  text-align: end;
   display: flex;
+  text-align: end;
 }
 .base .title .title-post_information .ending .next-post .next-post_text {
   margin-top: 5px;
@@ -1549,6 +1549,157 @@ header .connect .box i {
 .base .title .title-post_information .ending .next-post .next-post_text h4 {
   font-weight: 500;
   font-size: 18px;
+}
+.base .title .card {
+  display: flex;
+  gap: 20px;
+  padding: 5% 1.5rem;
+  background-color: #FBF9FF;
+}
+.base .title .card .card_text h3 {
+  font-weight: 500;
+  font-size: 17px;
+}
+.base .title .card .card_text p {
+  margin-top: 1.2rem;
+  line-height: 1.5;
+  font-size: 15px;
+  color: #7A838B;
+}
+.base .title .comments {
+  border-top: 1px solid #7A838B;
+  padding-bottom: 5%;
+}
+.base .title .comments h3 {
+  padding: 5% 0;
+  font-weight: 500;
+}
+.base .title .comments .comment-item {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.base .title .comments .comment-item .item {
+  display: flex;
+  gap: 20px;
+}
+.base .title .comments .comment-item .item .item_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.base .title .comments .comment-item .item .item_content p {
+  color: #7A838B;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.base .title .comments .comment-item .item .item_content .item_ending {
+  display: flex;
+  justify-content: space-between;
+}
+.base .title .comments .comment-item .item .item_content .item_ending .item_name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.base .title .comments .comment-item .item .item_content .item_ending .item_name h4 {
+  color: #666666;
+  font-weight: 500;
+}
+.base .title .comments .comment-item .item .item_content .item_ending .item_name p {
+  color: #B6BCC1;
+  font-size: 14px;
+}
+.base .title .comments .comment-item .item .item_content .item_ending .reply a {
+  text-transform: uppercase;
+  color: #7A838B;
+  font-size: 14px;
+}
+.base .title .communication-section {
+  font-family: "Rubik";
+  display: flex;
+}
+.base .title .communication-section .get-in-touch {
+  width: 100%;
+}
+.base .title .communication-section .get-in-touch h3 {
+  padding: 5% 0;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border-top: 1px solid #7A838B;
+}
+.base .title .communication-section .get-in-touch .form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: start;
+}
+.base .title .communication-section .get-in-touch .form textarea {
+  width: 100%;
+  height: 15rem;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+.base .title .communication-section .get-in-touch .form textarea::-moz-placeholder {
+  font-family: "Rubik";
+}
+.base .title .communication-section .get-in-touch .form textarea::placeholder {
+  font-family: "Rubik";
+}
+.base .title .communication-section .get-in-touch .form .name-email {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.base .title .communication-section .get-in-touch .form .name-email input {
+  border: 1px solid #eeeeee;
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 5px;
+}
+.base .title .communication-section .get-in-touch .form input {
+  border: 1px solid #7A838B;
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+.base .title .communication-section .get-in-touch .form .btn {
+  font-family: "Rubik";
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-radius: 0;
+  color: white;
+}
+.base .title .communication-section .addition {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 25%;
+  margin-top: 4%;
+  gap: 30px;
+}
+.base .title .communication-section .addition .addition_contact {
+  display: flex;
+  gap: 15px;
+}
+.base .title .communication-section .addition .addition_contact i {
+  font-size: 30px;
+  margin-top: 10px;
+  color: #7A838B;
+}
+.base .title .communication-section .addition .addition_contact .addition_text h3 {
+  font-weight: 450;
+  font-size: 17px;
+  color: #2A2A2A;
+}
+.base .title .communication-section .addition .addition_contact .addition_text p {
+  line-height: 2;
+  color: #7A838B;
 }
 .base .addition {
   font-family: "Rubik";
@@ -1741,6 +1892,82 @@ header .connect .box i {
   background-color: #FF4A52;
 }
 
+@media (max-width: 991px) {
+  .image-section_single-blog {
+    height: 70vh;
+  }
+  .image-section_single-blog .text {
+    gap: 20px;
+    width: 90%;
+  }
+  .image-section_single-blog .text h3 {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  .image-section_single-blog .text p {
+    text-align: center;
+    line-height: 1.5;
+  }
+  .base {
+    padding: 4rem 1rem 2rem 1rem;
+  }
+  .base .title {
+    padding: 5% 0;
+  }
+  .base .title .title-image h2 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .base .title .title-post_information {
+    gap: 20px;
+  }
+  .base .title .title-post_information .heading {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .base .title .title-post_information .heading .title-like {
+    font-size: 15px;
+  }
+  .base .title .title-post_information .ending {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .base .title .title-post_information .ending .pre-post {
+    justify-content: start;
+  }
+  .base .title .title-post_information .ending .next-post {
+    justify-content: end;
+  }
+  .base .title .card {
+    padding: 5% 0.2rem;
+  }
+  .base .title .card .card_image {
+    display: flex;
+    align-items: center;
+  }
+  .base .title .card .card_image img {
+    width: 50px;
+    height: 50px;
+  }
+  .base .title .comments .comment-item .item .item_content p {
+    line-height: 3;
+    font-size: 10px;
+  }
+  .base .title .comments .comment-item .item .item_content .item_ending {
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  .base .title .comments .comment-item .item .item_content .item_ending .item_name {
+    gap: 5px;
+  }
+  .base .title .comments .comment-item .item .item_content .item_ending .item_name p {
+    font-size: 12px;
+    padding: 0 13%;
+  }
+}
 .btn {
   padding: 20px 50px;
   background-color: #1EC6B6;
