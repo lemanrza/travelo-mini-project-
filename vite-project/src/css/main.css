@@ -1306,6 +1306,24 @@ header .connect .box i {
   color: white;
   background-color: #FF4A52;
 }
+.base .addition .feeds-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #FBF9FF;
+}
+.base .addition .feeds-section h3 {
+  font-weight: 500;
+  font-size: 22px;
+  border-bottom: 1px solid #B6BCC1;
+  padding: 20px 0;
+  margin: 0 20px 30px 20px;
+}
+.base .addition .feeds-section .feeds_images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  gap: 15px;
+}
 
 .btn {
   padding: 20px 50px;
