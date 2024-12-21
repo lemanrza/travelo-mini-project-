@@ -1536,8 +1536,8 @@ header .connect .box i {
 }
 .base .title .title-post_information .ending .next-post {
   gap: 20px;
-  text-align: end;
   display: flex;
+  text-align: end;
 }
 .base .title .title-post_information .ending .next-post .next-post_text {
   margin-top: 5px;
@@ -1599,6 +1599,7 @@ header .connect .box i {
 }
 .base .title .comments .comment-item .item .item_content .item_ending .item_name {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 .base .title .comments .comment-item .item .item_content .item_ending .item_name h4 {
@@ -1891,6 +1892,82 @@ header .connect .box i {
   background-color: #FF4A52;
 }
 
+@media (max-width: 991px) {
+  .image-section_single-blog {
+    height: 70vh;
+  }
+  .image-section_single-blog .text {
+    gap: 20px;
+    width: 90%;
+  }
+  .image-section_single-blog .text h3 {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  .image-section_single-blog .text p {
+    text-align: center;
+    line-height: 1.5;
+  }
+  .base {
+    padding: 4rem 1rem 2rem 1rem;
+  }
+  .base .title {
+    padding: 5% 0;
+  }
+  .base .title .title-image h2 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .base .title .title-post_information {
+    gap: 20px;
+  }
+  .base .title .title-post_information .heading {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .base .title .title-post_information .heading .title-like {
+    font-size: 15px;
+  }
+  .base .title .title-post_information .ending {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .base .title .title-post_information .ending .pre-post {
+    justify-content: start;
+  }
+  .base .title .title-post_information .ending .next-post {
+    justify-content: end;
+  }
+  .base .title .card {
+    padding: 5% 0.2rem;
+  }
+  .base .title .card .card_image {
+    display: flex;
+    align-items: center;
+  }
+  .base .title .card .card_image img {
+    width: 50px;
+    height: 50px;
+  }
+  .base .title .comments .comment-item .item .item_content p {
+    line-height: 3;
+    font-size: 10px;
+  }
+  .base .title .comments .comment-item .item .item_content .item_ending {
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  .base .title .comments .comment-item .item .item_content .item_ending .item_name {
+    gap: 5px;
+  }
+  .base .title .comments .comment-item .item .item_content .item_ending .item_name p {
+    font-size: 12px;
+    padding: 0 13%;
+  }
+}
 .btn {
   padding: 20px 50px;
   background-color: #1EC6B6;
