@@ -1481,7 +1481,7 @@ header .connect .box i {
   font-size: 17px;
 }
 .base .title .card {
-  background-color: #F2F3F7;
+  background-color: #FBF9FF;
   padding: 5%;
 }
 .base .title .card .mini-card {
@@ -1549,6 +1549,22 @@ header .connect .box i {
 .base .title .title-post_information .ending .next-post .next-post_text h4 {
   font-weight: 500;
   font-size: 18px;
+}
+.base .title .card {
+  display: flex;
+  gap: 20px;
+  padding: 3rem 1.5rem;
+  background-color: #FBF9FF;
+}
+.base .title .card .card_text h3 {
+  font-weight: 500;
+  font-size: 17px;
+}
+.base .title .card .card_text p {
+  margin-top: 1.2rem;
+  line-height: 1.5;
+  font-size: 15px;
+  color: #7A838B;
 }
 .base .addition {
   font-family: "Rubik";
