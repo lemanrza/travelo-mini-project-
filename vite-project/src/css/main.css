@@ -1305,10 +1305,6 @@ header .connect .box i {
   color: #7A838B;
   transition: 0.2s;
 }
-.base .addition .tag-section .tag-item ul li:hover a {
-  color: white;
-  background-color: #FF4A52;
-}
 .base .addition .feeds-section {
   display: flex;
   flex-direction: column;
