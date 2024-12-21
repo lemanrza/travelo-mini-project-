@@ -1060,6 +1060,7 @@ header .connect .box i {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  text-transform: capitalize;
 }
 .image-section_blog .text h3 {
   font-family: "Nothing You Could Do";
@@ -1190,14 +1191,16 @@ header .connect .box i {
   padding: 10%;
 }
 .base .addition .search-section input {
-  border: 1px solid #B6BCC1;
-  padding: 10px 50px 10px 10px;
+  border: 1px solid #eeeeee;
+  padding: 14px 50px 14px 10px;
 }
 .base .addition .search-section input::-moz-placeholder {
   font-size: 15px;
+  font-family: "Rubik";
 }
 .base .addition .search-section input::placeholder {
   font-size: 15px;
+  font-family: "Rubik";
 }
 .base .addition .search-section .btn {
   font-size: 18px;
@@ -1359,8 +1362,54 @@ header .connect .box i {
   font-size: 15px;
   text-transform: uppercase;
   border-radius: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.base .addition .newsletter .form .btn:hover {
+  background-color: #FF4A52;
 }
 
+@media (max-width: 991px) {
+  .image-section_blog .text {
+    gap: 20px;
+    width: 90%;
+  }
+  .image-section_blog .text h3 {
+    font-size: 50px;
+    letter-spacing: 3px;
+  }
+  .image-section_blog .text p {
+    text-align: center;
+    line-height: 1.5;
+  }
+  .base {
+    flex-direction: column;
+    padding: 3rem 1rem 2rem 1rem;
+  }
+  .base .title {
+    width: 100%;
+  }
+  .base .title .title-item .title-image .date {
+    padding: 0.5rem 1rem;
+    left: 18px;
+  }
+  .base .title .title-item .title-image .date h3 {
+    font-weight: 600;
+  }
+  .base .title .title-item .title-text {
+    padding: 2rem 10px;
+  }
+  .base .title .title-item .title-text h2 {
+    font-size: 18px;
+  }
+  .base .title .title-item .ending {
+    padding: 1rem 10px;
+    padding-bottom: 20px;
+  }
+  .base .addition {
+    width: 100%;
+  }
+}
 .btn {
   padding: 20px 50px;
   background-color: #1EC6B6;
