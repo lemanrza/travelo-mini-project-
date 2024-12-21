@@ -1259,9 +1259,106 @@ header .connect .box i {
 .base .addition .post-section .post-item .post-text h3 {
   font-weight: 500;
   font-size: 16px;
+  transition: 0.2s;
+  color: black;
+}
+.base .addition .post-section .post-item .post-text h3:hover {
+  color: #FF4A52;
+  cursor: pointer;
 }
 .base .addition .post-section .post-item .post-text p {
   color: #7A838B;
+}
+.base .addition .tag-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #FBF9FF;
+}
+.base .addition .tag-section h3 {
+  font-weight: 500;
+  font-size: 22px;
+  border-bottom: 1px solid #B6BCC1;
+  padding: 20px 0;
+  margin: 0 20px 20px;
+}
+.base .addition .tag-section .tag-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.base .addition .tag-section .tag-item ul {
+  padding: 20px;
+}
+.base .addition .tag-section .tag-item ul li {
+  display: inline;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #eeeeee;
+}
+.base .addition .tag-section .tag-item ul li a {
+  font-size: 14px;
+  line-height: 3;
+  padding: 20px 10px;
+  color: #7A838B;
+  transition: 0.2s;
+}
+.base .addition .tag-section .tag-item ul li:hover a {
+  color: white;
+  background-color: #FF4A52;
+}
+.base .addition .feeds-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #FBF9FF;
+}
+.base .addition .feeds-section h3 {
+  font-weight: 500;
+  font-size: 22px;
+  border-bottom: 1px solid #B6BCC1;
+  padding: 20px 0;
+  margin: 0 20px 30px 20px;
+}
+.base .addition .feeds-section .feeds_images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  gap: 15px;
+}
+.base .addition .newsletter {
+  display: flex;
+  flex-direction: column;
+  background-color: #FBF9FF;
+}
+.base .addition .newsletter h3 {
+  font-weight: 500;
+  font-size: 22px;
+  border-bottom: 1px solid #B6BCC1;
+  padding: 20px 0;
+  margin: 0 20px 30px 20px;
+}
+.base .addition .newsletter .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.base .addition .newsletter .form input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #eeeeee;
+}
+.base .addition .newsletter .form input::-moz-placeholder {
+  font-family: "Rubik";
+}
+.base .addition .newsletter .form input::placeholder {
+  font-family: "Rubik";
+}
+.base .addition .newsletter .form .btn {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 0;
 }
 
 .btn {
