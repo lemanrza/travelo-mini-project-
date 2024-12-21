@@ -1060,6 +1060,7 @@ header .connect .box i {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  text-transform: capitalize;
 }
 .image-section_blog .text h3 {
   font-family: "Nothing You Could Do";
@@ -1077,6 +1078,7 @@ header .connect .box i {
 .base {
   display: flex;
   justify-content: center;
+  align-items: start;
   gap: 30px;
   padding: 0% 7%;
 }
@@ -1085,7 +1087,6 @@ header .connect .box i {
   flex-direction: column;
   font-family: "Rubik";
   padding: 7% 0;
-  width: 60%;
   gap: 40px;
 }
 .base .title .title-item {
@@ -1178,6 +1179,301 @@ header .connect .box i {
   display: flex;
   flex-direction: column;
   padding: 7% 0;
+  gap: 20px;
+}
+.base .addition .search-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #FBF9FF;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 10%;
+}
+.base .addition .search-section input {
+  border: 1px solid #eeeeee;
+  padding: 14px 50px 14px 10px;
+}
+.base .addition .search-section input::-moz-placeholder {
+  font-size: 15px;
+  font-family: "Rubik";
+}
+.base .addition .search-section input::placeholder {
+  font-size: 15px;
+  font-family: "Rubik";
+}
+.base .addition .search-section .btn {
+  font-size: 18px;
+  border-radius: 0;
+  color: white;
+  padding: 5%;
+  text-align: center;
+}
+.base .addition .category-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #FBF9FF;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 3rem 2rem;
+}
+.base .addition .category-section h3 {
+  width: 100%;
+  font-weight: 500;
+  font-size: 22px;
+  padding-bottom: 20px;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #B6BCC1;
+}
+.base .addition .category-section .category-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.base .addition .category-section .category-item a {
+  color: #7A838B;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #B6BCC1;
+}
+.base .addition .post-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #FBF9FF;
+  gap: 20px;
+  padding: 5%;
+}
+.base .addition .post-section .heading {
+  font-weight: 500;
+  font-size: 22px;
+  border-bottom: 1px solid #B6BCC1;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+.base .addition .post-section .post-item {
+  display: flex;
+  gap: 20px;
+}
+.base .addition .post-section .post-item .post-text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.base .addition .post-section .post-item .post-text h3 {
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.2s;
+  color: black;
+}
+.base .addition .post-section .post-item .post-text h3:hover {
+  color: #FF4A52;
+  cursor: pointer;
+}
+.base .addition .post-section .post-item .post-text p {
+  color: #7A838B;
+}
+.base .addition .tag-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #FBF9FF;
+}
+.base .addition .tag-section h3 {
+  font-weight: 500;
+  font-size: 22px;
+  border-bottom: 1px solid #B6BCC1;
+  padding: 20px 0;
+  margin: 0 20px 20px;
+}
+.base .addition .tag-section .tag-item ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.base .addition .tag-section .tag-item ul li {
+  display: inline;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #eeeeee;
+}
+.base .addition .tag-section .tag-item ul li a {
+  font-size: 14px;
+  line-height: 3;
+  padding: 20px 10px;
+  color: #7A838B;
+  transition: 0.2s;
+}
+.base .addition .feeds-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #FBF9FF;
+}
+.base .addition .feeds-section h3 {
+  font-weight: 500;
+  font-size: 22px;
+  border-bottom: 1px solid #B6BCC1;
+  padding: 20px 0;
+  margin: 0 20px 30px 20px;
+}
+.base .addition .feeds-section .feeds_images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  gap: 15px;
+}
+.base .addition .newsletter {
+  display: flex;
+  flex-direction: column;
+  background-color: #FBF9FF;
+}
+.base .addition .newsletter h3 {
+  font-weight: 500;
+  font-size: 22px;
+  border-bottom: 1px solid #B6BCC1;
+  padding: 20px 0;
+  margin: 0 20px 30px 20px;
+}
+.base .addition .newsletter .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+.base .addition .newsletter .form input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #eeeeee;
+}
+.base .addition .newsletter .form input::-moz-placeholder {
+  font-family: "Rubik";
+}
+.base .addition .newsletter .form input::placeholder {
+  font-family: "Rubik";
+}
+.base .addition .newsletter .form .btn {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.base .addition .newsletter .form .btn:hover {
+  background-color: #FF4A52;
+}
+
+@media (max-width: 991px) {
+  .image-section_blog .text {
+    gap: 20px;
+    width: 90%;
+  }
+  .image-section_blog .text h3 {
+    font-size: 50px;
+    letter-spacing: 3px;
+  }
+  .image-section_blog .text p {
+    text-align: center;
+    line-height: 1.5;
+  }
+  .base {
+    flex-direction: column;
+    padding: 3rem 1rem 2rem 1rem;
+  }
+  .base .title {
+    min-width: 100%;
+  }
+  .base .title .title-item {
+    width: 100%;
+  }
+  .base .title .title-item .title-image .date {
+    padding: 0.5rem 1rem;
+    left: 18px;
+  }
+  .base .title .title-item .title-image .date h3 {
+    font-weight: 600;
+  }
+  .base .title .title-item .title-text {
+    padding: 2rem 10px;
+  }
+  .base .title .title-item .title-text h2 {
+    font-size: 18px;
+  }
+  .base .title .title-item .ending {
+    padding: 1rem 10px;
+    padding-bottom: 20px;
+  }
+  .base .addition {
+    min-width: 100%;
+  }
+}
+.image-section_single-blog {
+  height: 73vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.image-section_single-blog::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(18, 18, 18);
+  opacity: 0.1;
+}
+.image-section_single-blog img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.image-section_single-blog .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: capitalize;
+}
+.image-section_single-blog .text h3 {
+  font-family: "Nothing You Could Do";
+  font-size: 70px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: #fff;
+}
+.image-section_single-blog .text p {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.base {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0% 7%;
+}
+.base .title {
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik";
+  padding: 7% 0;
+  width: 60%;
+  gap: 40px;
+}
+.base .addition {
+  font-family: "Rubik";
+  display: flex;
+  flex-direction: column;
+  padding: 7% 0;
   width: 25%;
   gap: 20px;
 }
@@ -1190,14 +1486,16 @@ header .connect .box i {
   padding: 10%;
 }
 .base .addition .search-section input {
-  border: 1px solid #B6BCC1;
-  padding: 10px 50px 10px 10px;
+  border: 1px solid #eeeeee;
+  padding: 14px 50px 14px 10px;
 }
 .base .addition .search-section input::-moz-placeholder {
   font-size: 15px;
+  font-family: "Rubik";
 }
 .base .addition .search-section input::placeholder {
   font-size: 15px;
+  font-family: "Rubik";
 }
 .base .addition .search-section .btn {
   font-size: 18px;
@@ -1302,10 +1600,6 @@ header .connect .box i {
   color: #7A838B;
   transition: 0.2s;
 }
-.base .addition .tag-section .tag-item ul li:hover a {
-  color: white;
-  background-color: #FF4A52;
-}
 .base .addition .feeds-section {
   display: flex;
   flex-direction: column;
@@ -1359,6 +1653,11 @@ header .connect .box i {
   font-size: 15px;
   text-transform: uppercase;
   border-radius: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.base .addition .newsletter .form .btn:hover {
+  background-color: #FF4A52;
 }
 
 .btn {
