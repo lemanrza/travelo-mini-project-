@@ -103,25 +103,26 @@
 }
 
 @media (max-width:991px) {
-    // .image-section-about {
-    //     .image {
-    //         height: 50vh;
-    //     }
+    .image-section_about {
+        .image {
+            height: 50vh;
+        }
 
-    //     .text {
-    //         padding: 0 20px;
-    //         gap: 20px;
+        .text {
+            width: 100%;
+            gap: 20px;
 
-    //         h3 {
-    //             font-size: 40px;
-    //             letter-spacing: 3px;
-    //         }
+            h3 {
+                font-size: 60px;
+                letter-spacing: 3px;
+            }
 
-    //         p {
-    //             text-align: center;
-    //         }
-    //     }
-    // }
+            p {
+                text-align: center;
+            }
+        }
+   
+}
 
     .story-section {
         h3 {

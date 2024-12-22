@@ -144,17 +144,52 @@
 
         a {
             .btn-video {
+                position: relative;
                 border: none;
-                width: 90px;
-                height: 90px;
-                padding: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2rem;
                 background-color: $btn-color;
                 border-radius: 50%;
-
-                i {
-                    font-size: 20px;
-                    color: white;
+                &::before{
+                    content: " ";
+                    position: absolute;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $btn-color;
+                    border-radius: 50%;
+                    transform: scale(0.7);
+                    opacity: 0.9s;
+                    z-index: -1;
+                    animation: button 2s infinite;
                 }
+
+                    @keyframes button {
+                        0% {
+                            transform: scale(1);
+                            opacity: 0, 5;
+                        }
+
+                        50% {
+                            transform: scale(1.4);
+                            opacity: 0.3;
+                        }
+
+                        100% {
+                            transform: scale(1.7);
+                            opacity: 0.5;
+                        }
+                    }
+
+                
+            }
+
+            i {
+                font-size: 20px;
+                color: white;
+
             }
         }
     }
@@ -195,9 +230,10 @@
             border: 1px solid $dark-gray;
             border-radius: 7px;
             background-color: transparent;
-            padding: 15px 6%;
+            padding: 13px 8% 13px 20px;
             color: #757575;
-
+            font-family: "Rubik";
+            font-size: 16px;
         }
 
         .btn {
@@ -263,7 +299,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 40px;
+        gap: 20px;
         z-index: 999;
 
         input {
@@ -281,8 +317,13 @@
         .btn {
             background-color: $header-color;
             color: white;
-            font-size: 20px;
-            padding: 13px;
+            font-size: 17px;
+            font-weight: 600;
+            padding: 13px 20px;
+            transition: 0.4s;
+            &:hover {
+                background-color: $btn-color;
+            }
         }
     }
 }
@@ -293,7 +334,7 @@
     align-items: center;
     font-family: "Rubik";
     flex-direction: column;
-    padding: 40px;
+    padding: 40px 40px 10% 40px;
 
     h3 {
         padding: 5%;
@@ -359,6 +400,7 @@
     .information {
         display: flex;
         height: 55vh;
+        padding: 0 10px;
 
         .form {
             align-items: start;
@@ -388,7 +430,6 @@
 
         .text {
             width: 100%;
-            // padding: 0;
         }
 
         .form {
@@ -408,7 +449,7 @@
     }
 
     .recent-trips {
-        padding: 0;
+        padding: 40px 0;
 
         h3 {
             padding: 10% 0 30px 0;
