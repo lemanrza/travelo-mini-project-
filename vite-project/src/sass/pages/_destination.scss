@@ -274,6 +274,10 @@
             background-color: $header-color;
             border-radius: 7px;
             border: none;
+            transition: 0.4s;
+            &:hover {
+                background-color: $btn-color;
+            }
             a {
               font-weight: 500;  
             color: white;
