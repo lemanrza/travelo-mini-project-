@@ -294,6 +294,44 @@ header .connect .box i {
 .image-section_home .text .btn:hover {
   background-color: #FF4A52;
 }
+.image-section_home .left-slider {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  padding: 3rem 15px;
+  background-color: white;
+  opacity: 0.3;
+  z-index: 999;
+  top: 50%;
+  left: 0;
+  transition: 0.4s;
+}
+.image-section_home .left-slider:hover {
+  opacity: 1;
+}
+.image-section_home .left-slider:hover i {
+  color: black;
+}
+.image-section_home .right-slider {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  padding: 3rem 15px;
+  background-color: white;
+  opacity: 0.3;
+  z-index: 999;
+  top: 50%;
+  right: 0;
+  transition: 0.4s;
+}
+.image-section_home .right-slider:hover {
+  opacity: 1;
+}
+.image-section_home .right-slider:hover i {
+  color: black;
+}
 
 .popular_destination {
   display: flex;
@@ -324,6 +362,10 @@ header .connect .box i {
   border-radius: 7px;
   overflow: hidden;
   position: relative;
+  transition: 0.4s;
+}
+.popular_destination .popular_destination_photos .item:hover {
+  transform: translateY(-15px);
 }
 .popular_destination .popular_destination_photos .item:hover .text span {
   color: #FF4A52;
@@ -440,13 +482,19 @@ header .connect .box i {
 .comment-section .author_image {
   position: relative;
 }
-.comment-section .quote {
+.comment-section .author_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.comment-section .author_image .quote {
   position: absolute;
   background-color: #1EC6B6;
   color: white;
   border-radius: 50%;
-  margin-left: 5rem;
-  margin-bottom: 5%;
+  left: 4rem;
+  top: 4rem;
   padding: 17px;
 }
 .comment-section .text {
@@ -483,6 +531,28 @@ header .connect .box i {
 }
 
 @media (max-width: 991px) {
+  .image-section_home .image {
+    height: 50vh;
+  }
+  .image-section_home .text {
+    gap: 20px;
+  }
+  .image-section_home .text h3 {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+  .image-section_home .text p {
+    text-align: center;
+  }
+  .image-section_home .text .btn {
+    margin-top: 0;
+  }
+  .image-section_home .left-slider {
+    display: none;
+  }
+  .image-section_home .right-slider {
+    display: none;
+  }
   .popular_destination {
     padding: 15% 10px;
   }
@@ -603,6 +673,20 @@ header .connect .box i {
 }
 
 @media (max-width: 991px) {
+  .image-section_about .image {
+    height: 50vh;
+  }
+  .image-section_about .text {
+    width: 100%;
+    gap: 20px;
+  }
+  .image-section_about .text h3 {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+  .image-section_about .text p {
+    text-align: center;
+  }
   .story-section h3 {
     padding: 40px 14px 20px;
   }
@@ -692,10 +776,65 @@ header .connect .box i {
   border-radius: 10px;
 }
 .filter-result_section .filter-result .form #selection {
-  border: 1px solid #7A838B;
+  border: 1px solid #B6BCC1;
+  outline: none;
   border-radius: 6px;
   color: #7A838B;
   padding: 12px 10px;
+}
+.filter-result_section .filter-result .form .range h3 {
+  padding: 20px 0;
+  font-weight: 400;
+  font-size: 17px;
+}
+.filter-result_section .filter-result .form .range .range-slider {
+  height: 5px;
+  position: relative;
+  background-color: #e1e9f6;
+  border-radius: 2px;
+}
+.filter-result_section .filter-result .form .range .range-slider .range-selected {
+  height: 100%;
+  left: 30%;
+  right: 30%;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #FF4A52;
+}
+.filter-result_section .filter-result .form .range .range-input {
+  position: relative;
+}
+.filter-result_section .filter-result .form .range .range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -7px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.filter-result_section .filter-result .form .range .range-input input::-webkit-slider-thumb {
+  height: 25px;
+  width: 20px;
+  border-radius: 6px;
+  border: 3px solid #FF4A52;
+  background-color: #fff;
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+.filter-result_section .filter-result .form .range .range-input input::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 3px solid #1b53c0;
+  background-color: #fff;
+  pointer-events: auto;
+  -moz-appearance: none;
+}
+.filter-result_section .filter-result .form .range .range-prices {
+  padding-top: 20px;
+  color: #7A838B;
 }
 .filter-result_section .filter-result .btn {
   background-color: #FF4A52;
@@ -914,6 +1053,7 @@ header .connect .box i {
   width: 100%;
   height: 10rem;
   padding: 10px;
+  outline: none;
 }
 .communication .get-in-touch .form .name-email {
   width: 100%;
@@ -926,11 +1066,13 @@ header .connect .box i {
   border: 1px solid #7A838B;
   width: 100%;
   padding: 12px 15px;
+  outline: none;
 }
 .communication .get-in-touch .form input {
   border: 1px solid #7A838B;
   width: 100%;
   padding: 12px 15px;
+  outline: none;
 }
 .communication .get-in-touch .form .btn {
   font-family: "Rubik";
@@ -986,7 +1128,7 @@ header .connect .box i {
   }
   .communication {
     flex-direction: column;
-    padding: 10px 40px 10px 12px;
+    padding: 10px 40px 10px 16px;
     gap: 20px;
   }
   .communication .get-in-touch {
@@ -1111,23 +1253,23 @@ header .connect .box i {
   color: #7A838B;
   font-size: 16px;
 }
-.base .title .title-item .ending {
+.base .title .title-item .ending-blog {
   padding: 1rem 2rem;
   display: flex;
   gap: 15px;
   padding-bottom: 5%;
 }
-.base .title .title-item .ending a {
+.base .title .title-item .ending-blog a {
   color: #7A838B;
   font-size: 14px;
 }
-.base .title .title-item .ending a:hover {
+.base .title .title-item .ending-blog a:hover {
   color: #FF4A52;
 }
-.base .title .title-item .ending a i {
+.base .title .title-item .ending-blog a i {
   font-size: 12px;
 }
-.base .title .title-item .ending a:first-child {
+.base .title .title-item .ending-blog a:first-child {
   border-right: 1px solid black;
   padding-right: 3%;
 }
@@ -1367,7 +1509,7 @@ header .connect .box i {
   .base .title .title-item .title-text h2 {
     font-size: 18px;
   }
-  .base .title .title-item .ending {
+  .base .title .title-item .ending-blog {
     padding: 1rem 10px;
     padding-bottom: 20px;
   }
@@ -1452,21 +1594,21 @@ header .connect .box i {
   margin-top: 20px;
   font-weight: 600;
 }
-.base .title .ending {
+.base .title .ending-single {
   display: flex;
   gap: 15px;
 }
-.base .title .ending a {
+.base .title .ending-single a {
   color: #7A838B;
   font-size: 14px;
 }
-.base .title .ending a:hover {
+.base .title .ending-single a:hover {
   color: #FF4A52;
 }
-.base .title .ending a i {
+.base .title .ending-single a i {
   font-size: 12px;
 }
-.base .title .ending a:first-child {
+.base .title .ending-single a:first-child {
   border-right: 1px solid black;
   padding-right: 3%;
 }
@@ -1500,53 +1642,53 @@ header .connect .box i {
   border-bottom: 1px solid #7A838B;
   padding: 5% 0;
 }
-.base .title .title-post_information .heading {
+.base .title .title-post_information .heading-single {
   display: flex;
   justify-content: space-between;
   color: #7A838B;
 }
-.base .title .title-post_information .heading .title-like {
+.base .title .title-post_information .heading-single .title-like {
   display: flex;
   gap: 10px;
 }
-.base .title .title-post_information .heading .logo {
+.base .title .title-post_information .heading-single .logo {
   display: flex;
   gap: 20px;
 }
-.base .title .title-post_information .ending {
+.base .title .title-post_information .ending-single_information {
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
 }
-.base .title .title-post_information .ending .pre-post {
+.base .title .title-post_information .ending-single_information .pre-post {
   display: flex;
   text-align: start;
   gap: 20px;
 }
-.base .title .title-post_information .ending .pre-post .pre-post_text {
+.base .title .title-post_information .ending-single_information .pre-post .pre-post_text {
   margin-top: 5px;
 }
-.base .title .title-post_information .ending .pre-post .pre-post_text p {
+.base .title .title-post_information .ending-single_information .pre-post .pre-post_text p {
   color: #7A838B;
   margin-bottom: 5px;
 }
-.base .title .title-post_information .ending .pre-post .pre-post_text h4 {
+.base .title .title-post_information .ending-single_information .pre-post .pre-post_text h4 {
   font-weight: 500;
   font-size: 18px;
 }
-.base .title .title-post_information .ending .next-post {
+.base .title .title-post_information .ending-single_information .next-post {
   gap: 20px;
   display: flex;
   text-align: end;
 }
-.base .title .title-post_information .ending .next-post .next-post_text {
+.base .title .title-post_information .ending-single_information .next-post .next-post_text {
   margin-top: 5px;
 }
-.base .title .title-post_information .ending .next-post .next-post_text p {
+.base .title .title-post_information .ending-single_information .next-post .next-post_text p {
   color: #7A838B;
   margin-bottom: 5px;
 }
-.base .title .title-post_information .ending .next-post .next-post_text h4 {
+.base .title .title-post_information .ending-single_information .next-post .next-post_text h4 {
   font-weight: 500;
   font-size: 18px;
 }
@@ -1921,23 +2063,23 @@ header .connect .box i {
   .base .title .title-post_information {
     gap: 20px;
   }
-  .base .title .title-post_information .heading {
+  .base .title .title-post_information .heading-single {
     flex-direction: column;
     align-items: center;
     gap: 25px;
   }
-  .base .title .title-post_information .heading .title-like {
+  .base .title .title-post_information .heading-single .title-like {
     font-size: 15px;
   }
-  .base .title .title-post_information .ending {
+  .base .title .title-post_information .ending-single_information {
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
   }
-  .base .title .title-post_information .ending .pre-post {
+  .base .title .title-post_information .ending-single_information .pre-post {
     justify-content: start;
   }
-  .base .title .title-post_information .ending .next-post {
+  .base .title .title-post_information .ending-single_information .next-post {
     justify-content: end;
   }
   .base .title .card {
@@ -2097,14 +2239,43 @@ header .connect .box i {
   color: #fff;
 }
 .video-section .video-section_text a .btn-video {
+  position: relative;
   border: none;
-  width: 90px;
-  height: 90px;
-  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
   background-color: #1EC6B6;
   border-radius: 50%;
 }
-.video-section .video-section_text a .btn-video i {
+.video-section .video-section_text a .btn-video::before {
+  content: " ";
+  position: absolute;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: #1EC6B6;
+  border-radius: 50%;
+  transform: scale(0.7);
+  opacity: 0.9s;
+  z-index: -1;
+  animation: button 2s infinite;
+}
+@keyframes button {
+  0% {
+    transform: scale(1);
+    opacity: 0, 5;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.7);
+    opacity: 0.5;
+  }
+}
+.video-section .video-section_text a i {
   font-size: 20px;
   color: white;
 }
@@ -2144,8 +2315,10 @@ header .connect .box i {
   border: 1px solid #7A838B;
   border-radius: 7px;
   background-color: transparent;
-  padding: 15px 6%;
+  padding: 13px 8% 13px 20px;
   color: #757575;
+  font-family: "Rubik";
+  font-size: 16px;
 }
 .information .form .btn {
   background-color: #FF4A52;
@@ -2203,7 +2376,7 @@ header .connect .box i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   z-index: 999;
 }
 .subscribe .form input {
@@ -2224,8 +2397,13 @@ header .connect .box i {
 .subscribe .form .btn {
   background-color: #FF4A52;
   color: white;
-  font-size: 20px;
-  padding: 13px;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 13px 20px;
+  transition: 0.4s;
+}
+.subscribe .form .btn:hover {
+  background-color: #1EC6B6;
 }
 
 .recent-trips {
@@ -2234,7 +2412,7 @@ header .connect .box i {
   align-items: center;
   font-family: "Rubik";
   flex-direction: column;
-  padding: 40px;
+  padding: 40px 40px 10% 40px;
 }
 .recent-trips h3 {
   padding: 5%;
@@ -2287,6 +2465,7 @@ header .connect .box i {
   .information {
     display: flex;
     height: 55vh;
+    padding: 0 10px;
   }
   .information .form {
     align-items: start;
@@ -2326,7 +2505,7 @@ header .connect .box i {
     width: 100%;
   }
   .recent-trips {
-    padding: 0;
+    padding: 40px 0;
   }
   .recent-trips h3 {
     padding: 10% 0 30px 0;
@@ -2370,38 +2549,54 @@ footer .info .logo_and_info .social {
   padding-right: 40%;
   justify-content: space-between;
 }
-footer .info .addition {
+footer .info .logo_and_info .social i {
+  transition: 0.4s;
+}
+footer .info .logo_and_info .social i:hover {
+  color: #FF4A52;
+}
+footer .addition {
   display: flex;
   gap: 40px;
 }
-footer .info .addition h3 {
+footer .addition h3 {
   font-size: 20px;
   font-weight: 400;
   padding-bottom: 10%;
   color: white;
 }
-footer .info .addition .company ul {
+footer .addition .company ul {
   line-height: 2;
 }
-footer .info .addition .company ul li a {
+footer .addition .company ul li a {
   color: #AAB1B7;
+  transition: 0.4s;
 }
-footer .info .addition .popular-destination .all-list {
+footer .addition .company ul li a:hover {
+  color: #FF4A52;
+}
+footer .addition .popular-destination .all-list {
   display: flex;
   gap: 25px;
   line-height: 2;
 }
-footer .info .addition .popular-destination .all-list a {
+footer .addition .popular-destination .all-list a {
   color: #AAB1B7;
+  transition: 0.4s;
 }
-footer .info .addition .instagram .instagram-photos {
+footer .addition .popular-destination .all-list a:hover {
+  color: #FF4A52;
+}
+footer .addition .instagram .instagram-photos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
 }
-footer .ending {
+
+.ending {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2410,11 +2605,11 @@ footer .ending {
   border-top: 1px solid #7A838B;
   padding: 3% 20% 20px 20%;
 }
-footer .ending p:first-child {
+.ending p:first-child {
   border-right: 2px solid #7A838B;
   padding: 0 15px;
 }
-footer .ending p:last-child span {
+.ending p:last-child span {
   color: #FF4A52;
 }
 
@@ -2430,6 +2625,14 @@ footer .ending p:last-child span {
     padding-top: 20px;
     flex-direction: column;
     width: 100%;
+  }
+  footer .addition .instagram .instagram-photos {
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+  footer .addition .instagram .instagram-photos img {
+    width: 100%;
+    height: 100%;
   }
   footer .ending {
     flex-direction: column;

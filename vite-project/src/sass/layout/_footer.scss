@@ -1,7 +1,6 @@
 footer {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     font-family: "Rubik";
     background-color: #040E27;
     color: white;
@@ -35,6 +34,13 @@ footer {
                 display: flex;
                 padding-right: 40%;
                 justify-content: space-between;
+                i {
+                    transition: 0.4s;
+                    &:hover{
+                        color: $header-color;
+                        }
+                }
+                }
             }
         }
 
@@ -56,6 +62,10 @@ footer {
                     li {
                         a {
                             color: #AAB1B7;
+                            transition: 0.4s;
+                        &:hover{
+                            color: $header-color;
+                        }
                         }
                     }
                 }
@@ -70,6 +80,10 @@ footer {
 
                     a {
                         color: #AAB1B7;
+                        transition: 0.4s;
+                        &:hover{
+                            color: $header-color;
+                        }
                     }
                 }
             }
@@ -81,6 +95,7 @@ footer {
                     gap: 20px;
                     border-radius: 10px;
                     overflow: hidden;
+                    cursor: pointer;
                 }
             }
         }
@@ -105,30 +120,43 @@ footer {
             &:last-child {
                 span {
                     color: $header-color;
-                    
+
                 }
             }
         }
     }
-}
 
-@media (max-width:991px) {  
+
+@media (max-width:991px) {
     footer {
-         padding-bottom: 20px;
-   
-    .info {
-        flex-direction: column;
-        padding: 0 4%;
-    }
+        padding-bottom: 20px;
 
-    .addition {
-        padding-top: 20px;
-        flex-direction: column;
-        width: 100%;
+        .info {
+            flex-direction: column;
+            padding: 0 4%;
+        }
+
+        .addition {
+            padding-top: 20px;
+            flex-direction: column;
+            width: 100%;
+
+            .instagram {
+                .instagram-photos {
+                    gap: 10px;
+                    padding-bottom: 20px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .ending {
+            flex-direction: column;
+            padding: 3% 0;
+        }
     }
-    .ending {
-     flex-direction: column;
-    padding: 3% 0;
-    }
-}
 }
