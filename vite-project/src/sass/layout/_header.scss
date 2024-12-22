@@ -7,14 +7,16 @@ header {
     z-index: 999;
     width: 100%;
     background-color: white;
-     .toggle-menu {
+
+    .toggle-menu {
         display: none;
         margin-bottom: .3rem;
-        i{
+
+        i {
             color: $header-color;
             font-size: 25px;
         }
-     }
+    }
 
     nav {
         display: flex;
@@ -34,13 +36,51 @@ header {
             border-left: 1px solid #a4a4a4;
 
             li {
-                margin: 0 10px;
+                padding: 10px 13px;
+
+
+
+                &:nth-child(4) {
+                    position: relative;
+
+                    &:hover {
+                        ul {
+                            animation: dropdown .6s ease-in-out forwards;
+                        }
+                    }
+
+                    ul {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        background-color: #fff;
+                        width: 130px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        gap: 12px;
+                        padding: 1rem 0.2rem 1rem 1rem;
+                        opacity: 0;
+
+
+                        @keyframes dropdown {
+                            from {
+                                opacity: 0;
+                            }
+
+                            to {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
 
                 a {
                     color: black;
                     font-size: 16px;
                     font-weight: 400;
                     transition: 0.2s;
+
                     &:hover {
                         color: $btn-color;
                     }
@@ -80,6 +120,7 @@ header {
             a {
                 color: $gray-color;
                 transition: 0.4s;
+
                 &:hover {
                     color: $header-color;
                 }
@@ -104,25 +145,30 @@ header {
     header {
         overflow: hidden;
         padding-left: 1rem;
-         .toggle-menu{
+
+        .toggle-menu {
             display: block;
         }
-         nav {
+
+        nav {
             .logo {
                 padding: 0;
             }
+
             .navbar {
                 display: none;
             }
         }
+
         .connect {
- 
             .phone {
                 display: none;
             }
+
             .social {
                 display: none;
             }
+
             .box {
                 padding: 25px;
             }

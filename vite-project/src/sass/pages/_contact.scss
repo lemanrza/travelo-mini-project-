@@ -118,6 +118,10 @@
                 margin-top: 20px;
                 border-radius: 0;
                 color: white;
+                transition: 0.3s;
+                &:hover {
+                    background-color: $header-color;
+                }
             }
         }
     }
@@ -189,4 +193,4 @@
            margin-bottom: 20px;
         }
     }
-    }
+ }

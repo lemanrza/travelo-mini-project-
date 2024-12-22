@@ -172,7 +172,34 @@ header nav .navbar {
   border-left: 1px solid #a4a4a4;
 }
 header nav .navbar li {
-  margin: 0 10px;
+  padding: 10px 13px;
+}
+header nav .navbar li:nth-child(4) {
+  position: relative;
+}
+header nav .navbar li:nth-child(4):hover ul {
+  animation: dropdown 0.6s ease-in-out forwards;
+}
+header nav .navbar li:nth-child(4) ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+  padding: 1rem 0.2rem 1rem 1rem;
+  opacity: 0;
+}
+@keyframes dropdown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 header nav .navbar li a {
   color: black;
@@ -939,6 +966,10 @@ header .connect .box i {
   background-color: #FF4A52;
   border-radius: 7px;
   border: none;
+  transition: 0.4s;
+}
+.filter-result_section .popular-places .btn:hover {
+  background-color: #1EC6B6;
 }
 .filter-result_section .popular-places .btn a {
   font-weight: 500;
@@ -1080,6 +1111,10 @@ header .connect .box i {
   margin-top: 20px;
   border-radius: 0;
   color: white;
+  transition: 0.3s;
+}
+.communication .get-in-touch .form .btn:hover {
+  background-color: #FF4A52;
 }
 .communication .addition {
   display: flex;
@@ -1655,6 +1690,12 @@ header .connect .box i {
   display: flex;
   gap: 20px;
 }
+.base .title .title-post_information .heading-single .logo i {
+  transition: 0.2s;
+}
+.base .title .title-post_information .heading-single .logo i:hover {
+  color: #FF4A52;
+}
 .base .title .title-post_information .ending-single_information {
   margin-top: 5%;
   display: flex;
@@ -1675,6 +1716,11 @@ header .connect .box i {
 .base .title .title-post_information .ending-single_information .pre-post .pre-post_text h4 {
   font-weight: 500;
   font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.base .title .title-post_information .ending-single_information .pre-post .pre-post_text h4:hover {
+  color: #FF4A52;
 }
 .base .title .title-post_information .ending-single_information .next-post {
   gap: 20px;
@@ -1691,6 +1737,11 @@ header .connect .box i {
 .base .title .title-post_information .ending-single_information .next-post .next-post_text h4 {
   font-weight: 500;
   font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.base .title .title-post_information .ending-single_information .next-post .next-post_text h4:hover {
+  color: #FF4A52;
 }
 .base .title .card {
   display: flex;
@@ -1701,6 +1752,11 @@ header .connect .box i {
 .base .title .card .card_text h3 {
   font-weight: 500;
   font-size: 17px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.base .title .card .card_text h3:hover {
+  color: #FF4A52;
 }
 .base .title .card .card_text p {
   margin-top: 1.2rem;
@@ -1747,15 +1803,27 @@ header .connect .box i {
 .base .title .comments .comment-item .item .item_content .item_ending .item_name h4 {
   color: #666666;
   font-weight: 500;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.base .title .comments .comment-item .item .item_content .item_ending .item_name h4:hover {
+  color: #FF4A52;
 }
 .base .title .comments .comment-item .item .item_content .item_ending .item_name p {
   color: #B6BCC1;
   font-size: 14px;
 }
+.base .title .comments .comment-item .item .item_content .item_ending .reply {
+  transition: 0.2s;
+  cursor: pointer;
+}
 .base .title .comments .comment-item .item .item_content .item_ending .reply a {
   text-transform: uppercase;
   color: #7A838B;
   font-size: 14px;
+}
+.base .title .comments .comment-item .item .item_content .item_ending .reply a:hover {
+  color: #FF4A52;
 }
 .base .title .communication-section {
   font-family: "Rubik";
@@ -1783,6 +1851,7 @@ header .connect .box i {
   padding: 10px;
   border: 1px solid #eeeeee;
   border-radius: 5px;
+  outline: none;
 }
 .base .title .communication-section .get-in-touch .form textarea::-moz-placeholder {
   font-family: "Rubik";
@@ -1802,6 +1871,7 @@ header .connect .box i {
   width: 100%;
   padding: 12px 15px;
   border-radius: 5px;
+  outline: none;
 }
 .base .title .communication-section .get-in-touch .form input {
   border: 1px solid #7A838B;
@@ -1809,6 +1879,7 @@ header .connect .box i {
   padding: 12px 15px;
   border: 1px solid #eeeeee;
   border-radius: 5px;
+  outline: none;
 }
 .base .title .communication-section .get-in-touch .form .btn {
   font-family: "Rubik";
@@ -1816,6 +1887,10 @@ header .connect .box i {
   margin-top: 20px;
   border-radius: 0;
   color: white;
+  transition: 0.3s;
+}
+.base .title .communication-section .get-in-touch .form .btn:hover {
+  background-color: #FF4A52;
 }
 .base .title .communication-section .addition {
   display: flex;
@@ -1877,6 +1952,10 @@ header .connect .box i {
   color: white;
   padding: 5%;
   text-align: center;
+  transition: 0.4s;
+}
+.base .addition .search-section .btn:hover {
+  background-color: #FF4A52;
 }
 .base .addition .category-section {
   display: flex;
@@ -1904,6 +1983,12 @@ header .connect .box i {
   color: #7A838B;
   padding-bottom: 20px;
   border-bottom: 1px solid #B6BCC1;
+}
+.base .addition .category-section .category-item a p {
+  transition: 0.3s;
+}
+.base .addition .category-section .category-item a:hover p {
+  color: #FF4A52;
 }
 .base .addition .post-section {
   display: flex;
@@ -1953,26 +2038,29 @@ header .connect .box i {
   padding: 20px 0;
   margin: 0 20px 20px;
 }
-.base .addition .tag-section .tag-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .base .addition .tag-section .tag-item ul {
-  padding: 20px;
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+  gap: 0.6rem;
 }
 .base .addition .tag-section .tag-item ul li {
-  display: inline;
-  padding: 6px 10px;
   background-color: #fff;
   border: 1px solid #eeeeee;
+  padding: 0 0.1rem;
 }
 .base .addition .tag-section .tag-item ul li a {
   font-size: 14px;
-  line-height: 3;
-  padding: 20px 10px;
   color: #7A838B;
-  transition: 0.2s;
+  transition: 0.6s;
+}
+.base .addition .tag-section .tag-item ul li:hover {
+  background-color: #FF4A52;
+}
+.base .addition .tag-section .tag-item ul li:hover a {
+  color: white;
 }
 .base .addition .feeds-section {
   display: flex;
@@ -2247,6 +2335,7 @@ header .connect .box i {
   padding: 2rem;
   background-color: #1EC6B6;
   border-radius: 50%;
+  cursor: pointer;
 }
 .video-section .video-section_text a .btn-video::before {
   content: " ";
