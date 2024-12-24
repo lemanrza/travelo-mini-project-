@@ -29,9 +29,6 @@ Clone my project
 Vercel
 https://travelo-mini-project-nknb.vercel.app/
 
-## ScreenShot
-![home-page](./vite-project/images/Screenshot-home.png)
-
 ## Technologies Used
 - HTML5: For structuring and presenting the content of the application.
 - SCSS: For enhanced and modular styling with advanced features like variables, nesting, and mixins.
